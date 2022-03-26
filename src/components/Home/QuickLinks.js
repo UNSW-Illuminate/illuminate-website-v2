@@ -1,9 +1,9 @@
 import * as React from "react";
 import QuickLink from "./QuickLink";
 import "./styles/QuickLinks.scss";
-import Illuminate from "../../images/illuminateLogo.svg";
+import Illuminate from "../../images/illuminateLogo.png";
 import Team from "../../images/team.svg";
-import Blog from "../../images/blog.png";
+import Blog from "../../images/blog.svg";
 
 const QuickLinks = () => {
   return (
