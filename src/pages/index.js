@@ -1,10 +1,10 @@
 import * as React from "react";
-import Navbar from "../components/Home/Navbar";
+import Landing from "./landing";
 
 const IndexPage = () => {
   return (
     <>
-      <Navbar />
+      <Landing />
     </>
   );
 };

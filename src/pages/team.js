@@ -1,5 +1,6 @@
 import React from 'react';
+import Template from './template';
 
-const Team = () => <>Team page</>;
+const Team = () => <Template />;
 
 export default Team;

@@ -1,5 +1,6 @@
 import React from 'react';
+import Template from './template';
 
-const Projects = () => <>projects page</>;
+const Projects = () => <Template />;
 
 export default Projects;

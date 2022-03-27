@@ -16,10 +16,7 @@ const Navbar = () => {
         {navigations.map((nav, index) => (
           <li key={index}>
             <Link to={nav.link} className="link">
-              <span className="inner">
-                <span className="normal ">{nav.title}</span>
-                <span className="hover">{nav.title}</span>
-              </span>
+              <span className="title">{nav.title}</span>
             </Link>
           </li>
         ))}

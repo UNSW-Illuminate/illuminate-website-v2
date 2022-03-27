@@ -1,5 +1,6 @@
 import React from "react";
+import Template from "./template";
 
-const Landing = () => <>Landing page</>;
+const Landing = () => <Template />;
 
 export default Landing;
