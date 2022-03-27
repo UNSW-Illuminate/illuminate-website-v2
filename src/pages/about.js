@@ -1,6 +1,5 @@
 import React from "react";
-import Template from "./template";
-import './about.scss';
+import Template from "../components/Template/template";
 
 const About = () => (
   <Template>
