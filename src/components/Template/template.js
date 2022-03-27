@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Home/Navbar";
+import Navbar from "../Home/Navbar";
 
 const Template = ({ children }) => {
   return (
