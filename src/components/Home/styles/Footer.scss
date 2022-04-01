@@ -21,10 +21,8 @@
 .footer-illuminate {
   background-color: #0E0E0E;
   display: flex;
-  justify-content: flex-start;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
+  justify-content: space-between;
+  height: 100px;
 }
 
 .footer-media {
@@ -60,4 +58,17 @@
 
 .icon-dimension:hover {
   fill: rgb(0.784314%,53.333336%,81.960785%);
+}
+
+#IlluminateLogo {
+  width: 78px;
+  height: 78px;
+  background-color: #0E0E0E;
+}
+
+#IlluminateText {
+  display: flex;
+  align-items: center;
+  background-color: #0E0E0E;
+  font-size: larger;
 }

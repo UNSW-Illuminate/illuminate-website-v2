@@ -7,6 +7,7 @@ import ArcLogoGreen from "../../images/arcLogoGreenOutline.png";
 import Facebook from "../../images/facebook.svg";
 import Instagram from "../../images/instagram.svg";
 import LinkedIn from "../../images/linkedin.svg";
+import Discord from "../../images/discord.svg";
 
 const Footer = () => {
   return (
@@ -14,15 +15,15 @@ const Footer = () => {
       <div className="footer-information">
         <div className="footer-icons">
           <div className="footer-illuminate">
-            <img src={Illuminate} alt="illuminateLogo"/>
-            {/* <Logo title="Illuminate Logo" original={Illuminate} /> */}
-            <p>UNSW Illuminate</p>
+            {/* <img src={Illuminate} alt="illuminateLogo"/> */}
+            <Logo title="IlluminateLogo" original={Illuminate} />
+            <p id="IlluminateText">UNSW Illuminate</p>
           </div>
           <div className="footer-media">
             <Logo title="Arc Logo" original={ArcLogoWhite} hover={ArcLogoGreen}/>
             <Logo title="Facebook Logo" original={Facebook} />
             <Logo title="Instagram Logo" original={Instagram} />
-            {/* <Logo title="Discord Logo" original={Discord}/> */}
+            <Logo title="Discord Logo" original={Discord}/>
             <Logo title="LinkedIn Logo" original={LinkedIn} />
           </div>
         </div>
