@@ -8,9 +8,9 @@ import Blog from "../../images/blog.svg";
 const QuickLinks = () => {
   return (
     <div className="quick-container">
-        <QuickLink icon={Logo} title="About Us"/>
-        <QuickLink icon={Team} title="Our Team"/>
-        <QuickLink icon={Blog} title="Blogs"/>
+        <QuickLink icon={Logo} title="About Us" link="/about"/>
+        <QuickLink icon={Team} title="Our Team" link="/team"/>
+        <QuickLink icon={Blog} title="Blogs" link="/blogs"/>
     </div>
     );
 };
