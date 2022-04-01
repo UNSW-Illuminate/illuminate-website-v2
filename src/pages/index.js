@@ -1,13 +1,11 @@
 import * as React from "react";
-import Navbar from "../components/Home/Navbar";
-import QuickLinks from "../components/Home/QuickLinks";
+import Landing from "./landing";
 
 const IndexPage = () => {
   return (
-    <div>
-      <Navbar />
-      <QuickLinks />
-    </div>
+    <>
+      <Landing />
+    </>
   );
 };
 

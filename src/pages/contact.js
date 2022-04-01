@@ -1,6 +1,6 @@
 import React from "react";
 import Template from "../components/Template/template";
 
-const About = () => <Template />;
+const Contact = () => <Template><p>contact</p></Template>;
 
-export default About;
+export default Contact;
