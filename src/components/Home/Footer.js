@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import * as React from "react";
 import "./styles/Footer.scss";
 import Illuminate from "../../images/logo.png";
@@ -28,26 +29,26 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-quick-links">
-          <div className="footer-quick-links-list">
+          <Link to="/" className="footer-quick-links-list">
             Home
-          </div>
-          <div className="footer-quick-links-list">
+          </Link>
+          <Link to="/about" className="footer-quick-links-list">
             About Us
-          </div>
-          <div className="footer-quick-links-list">
+          </Link>
+          <Link to="/events" className="footer-quick-links-list">
             Events
-          </div>
+          </Link>
         </div>
         <div className="footer-quick-links">
-          <div className="footer-quick-links-list">
+          <Link to="/team" className="footer-quick-links-list">
             Team
-          </div>
-          <div className="footer-quick-links-list">
+          </Link>
+          <Link to="/projects" className="footer-quick-links-list">
             Projects
-          </div>
-          <div className="footer-quick-links-list">
+          </Link>
+          <Link to="/contact" className="footer-quick-links-list">
             Contact Us
-          </div>
+          </Link>
         </div>
       </div>
       <div className="footer-copyright">
