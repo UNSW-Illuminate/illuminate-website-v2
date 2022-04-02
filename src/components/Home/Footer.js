@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./styles/Footer.scss";
-import Illuminate from "../../images/illuminateLogo.png";
+import Illuminate from "../../images/logo.png";
 import Logo from "./Logo";
 import ArcLogoWhite from "../../images/arcLogoWhiteOutline.png";
 import ArcLogoGreen from "../../images/arcLogoGreenOutline.png";

@@ -1,13 +1,10 @@
 import * as React from "react";
-import Footer from "../components/Home/Footer";
-import Navbar from "../components/Home/Navbar";
+import Landing from "./landing";
 
 const IndexPage = () => {
   return (
     <>
-      <Navbar />
-      <br></br>
-      <Footer />
+      <Landing />
     </>
   );
 };
