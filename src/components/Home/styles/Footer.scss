@@ -10,22 +10,24 @@
 .footer-information {
   background-color: #0E0E0E;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 40px;
 }
 
 .footer-icons {
   background-color: #0E0E0E;
+  flex: 3;
 }
 
 .footer-illuminate {
   background-color: #0E0E0E;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 100px;
 }
 
 .footer-media {
+  background-color: #0E0E0E;
   display: flex;
   justify-content: center;
 }
@@ -34,12 +36,23 @@
   background-color: #0E0E0E;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-right: 32px;
   padding: 10px;
+  flex: 1;
 }
 
 .footer-quick-links-list {
   background-color: #0E0E0E;
   text-decoration: none;
+  flex: 1;
+
+  li {
+    background-color: #0E0E0E;
+    display: block;
+    margin-right: 32px;
+    
+  }
 }
 
 .footer-copyright {
@@ -53,17 +66,24 @@
 }
 
 .icon-dimension {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
+  background-color: #0E0E0E
 }
 
 .icon-dimension:hover {
   fill: rgb(0.784314%,53.333336%,81.960785%);
 }
 
-#IlluminateLogo {
+#illuminateLogo {
   width: 78px;
   height: 78px;
+  background-color: #0E0E0E;
+}
+
+#arcLogo {
+  width: 29px;
+  height: 36px;
   background-color: #0E0E0E;
 }
 

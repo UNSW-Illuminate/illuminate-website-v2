@@ -16,40 +16,40 @@ const Footer = () => {
       <div className="footer-information">
         <div className="footer-icons">
           <div className="footer-illuminate">
-            {/* <img src={Illuminate} alt="illuminateLogo"/> */}
-            <Logo title="IlluminateLogo" original={Illuminate} />
+            <Logo title="illuminateLogo" original={Illuminate} />
             <p id="IlluminateText">UNSW Illuminate</p>
           </div>
           <div className="footer-media">
-            <Logo title="Arc Logo" original={ArcLogoWhite} hover={ArcLogoGreen}/>
-            <Logo title="Facebook Logo" original={Facebook} />
-            <Logo title="Instagram Logo" original={Instagram} />
-            <Logo title="Discord Logo" original={Discord}/>
-            <Logo title="LinkedIn Logo" original={LinkedIn} />
+            <Logo title="arcLogo" original={ArcLogoWhite} hover={ArcLogoGreen}/>
+            <Logo title="facebookLogo" original={Facebook} />
+            <Logo title="instagramLogo" original={Instagram} />
+            <Logo title="discordLogo" original={Discord}/>
+            <Logo title="linkedInLogo" original={LinkedIn} />
           </div>
         </div>
         <div className="footer-quick-links">
           <Link to="/" className="footer-quick-links-list">
-            Home
+            <li>Home</li>
           </Link>
           <Link to="/about" className="footer-quick-links-list">
-            About Us
+            <li>About Us</li>
           </Link>
           <Link to="/events" className="footer-quick-links-list">
-            Events
+            <li>Events</li>
           </Link>
         </div>
         <div className="footer-quick-links">
           <Link to="/team" className="footer-quick-links-list">
-            Team
+            <li>Team</li>
           </Link>
           <Link to="/projects" className="footer-quick-links-list">
-            Projects
+            <li>Projects</li>
           </Link>
           <Link to="/contact" className="footer-quick-links-list">
-            Contact Us
+            <li>Contact Us</li>
           </Link>
         </div>
+        <div className="footer-quick-links"></div>
       </div>
       <div className="footer-copyright">
         Copyright © UNSW Illuminate 2022

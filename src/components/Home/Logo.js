@@ -4,9 +4,7 @@ import "./styles/Footer.scss";
 const Logo = ({original, hover, title}) => {
 
   return (
-    <div className="icon-dimension">
-      <img className="icon-dimension" src={original} alt={title} id={title} />
-    </div>
+    <img className="icon-dimension" src={original} alt={title} id={title} />
   );
 };
 
