@@ -21,10 +21,10 @@ const Footer = () => {
           </div>
           <div className="footer-media">
             <Logo title="arcLogo" original={ArcLogoWhite} hover={ArcLogoGreen}/>
-            <Logo title="facebookLogo" original={Facebook} />
-            <Logo title="instagramLogo" original={Instagram} />
-            <Logo title="discordLogo" original={Discord}/>
-            <Logo title="linkedInLogo" original={LinkedIn} />
+            <Logo title="facebookLogo" original={Facebook} hover={Facebook}/>
+            <Logo title="instagramLogo" original={Instagram} hover={Instagram}/>
+            <Logo title="discordLogo" original={Discord} hover={Discord}/>
+            <Logo title="linkedInLogo" original={LinkedIn} hover={LinkedIn}/>
           </div>
         </div>
         <div className="footer-quick-links">
