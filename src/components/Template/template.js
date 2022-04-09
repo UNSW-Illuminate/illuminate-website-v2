@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "../Home/Navbar";
 
-const Template = ({ children }) => {
+const Template = ({ children, currentPage }) => {
   return (
     <>
-      <Navbar />
+      <Navbar currentPage={currentPage}/>
       {children}
     </>
   );
