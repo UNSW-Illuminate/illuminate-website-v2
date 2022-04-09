@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@formcarry/react": "^1.0.3",
     "framer-motion": "^6.2.8",
     "gatsby": "^4.9.2",
     "gatsby-plugin-google-fonts": "^1.0.1",

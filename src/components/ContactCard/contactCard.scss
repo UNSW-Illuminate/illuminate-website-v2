@@ -63,10 +63,6 @@
         padding: 55px 50px;
     }
 
-    .label {
-        margin-bottom: 25px;
-    }
-
     * {
         background-color: #141414;
         width: calc(100% - 24px);
@@ -75,6 +71,7 @@
     input {
         height: 80px;
         border-radius: 15px;
+        margin-top: 20px;
         margin-bottom: 35px;
         border: #323232 3px solid;
         font-size: 24px;
@@ -93,6 +90,7 @@
         height: 250px;
         border-radius: 15px;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     textarea:focus {
@@ -107,6 +105,16 @@
         height: 80px;
         border-radius: 15px;
         font-size: 32px;
+        position: relative;
+    }
+
+    .buttonProgress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        //background-color: rgba($color: #000, $alpha: 0.2);
+        background-color: red;
     }
 }
 
