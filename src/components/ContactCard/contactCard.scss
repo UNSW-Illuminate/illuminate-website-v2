@@ -16,9 +16,10 @@
     flex: 1;
     border-radius: inherit;
 
-    * {
+    *:not(p) {
         margin-bottom: 60px;
     }
+
 
     img {
         margin-right: 30px;
@@ -36,7 +37,7 @@
     
     .emailSection {
         display: flex;
-        margin-bottom: 60px;
+        margin: 60px 0;
     }
     
     .emailLogo {

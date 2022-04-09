@@ -1,6 +1,6 @@
 import React from "react";
 import "./contactCard.scss";
-import email from "../../images/email.svg";
+import emailLogo from "../../images/email.svg";
 import arc from "../../images/arc.svg";
 import discord from "../../images/discord.svg";
 import facebook from "../../images/facebook.svg";
@@ -9,22 +9,20 @@ import instagram from "../../images/instagram.svg";
 import { motion } from "framer-motion";
 
 const ContactCard = () => {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
-
-  const sendMessage = () => {};
   return (
     <>
       <div className="container">
         <div className="leftContainer">
           <h2 className="heading">Get in Touch!</h2>
-          <p>
-            Feel free to message us if you have any questions, whether it's
-            about joining the team or sponsoring us!
-          </p>
+          <p>Feel free to message us if you have any questions,</p>
+          <p> whether it's about joining the team or sponsoring us!</p>
           <div className="emailSection">
-            <img className="emailLogo" src={email} height="36px" width="36px" />
+            <img
+              className="emailLogo"
+              src={emailLogo}
+              height="36px"
+              width="36px"
+            />
             <div>
               <a href="mailto:admin@unswilluminate.com">
                 admin@unswilluminate.com
@@ -65,32 +63,21 @@ const ContactCard = () => {
           />
         </div>
         <div className="rightContainer">
-          <div id="infoCard">
+          <form
+            id="infoCard"
+            action="https://formcarry.com/s/ott2r2kWXHeH"
+            method="POST"
+          >
             <div className="label">Name</div>
-            <input
-              value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
-            />
+            <input />
             <div className="label">Email</div>
-            <input
-              name={email}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-            />
+            <input />
             <div className="label">Message</div>
-            <textarea
-              value={message}
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
-            />
-            <motion.button whileHover={{ scale: 1.1 }} onClick={sendMessage}>
+            <textarea />
+            <motion.button whileHover={{ scale: 1.1 }} type="submit">
               Send
             </motion.button>
-          </div>
+          </form>
         </div>
       </div>
     </>
