@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/Hero.scss";
 import SpotlightL from "../../images/spotlight-left.svg";
 import { motion } from "framer-motion";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -20,7 +21,9 @@ const Hero = () => {
       </SlideIn>
       {/* <img src={SpotlightL} className="spotlight" /> */}
       <SlideIn delay={0.9}>
-        <button className="projectsBtn">See our Projects!</button>
+        <Link to="collageWrapper" smooth={true}>
+          <button className="projectsBtn">See our Projects!</button>
+        </Link>
       </SlideIn>
     </div>
   );

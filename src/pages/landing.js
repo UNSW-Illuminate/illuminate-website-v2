@@ -6,7 +6,7 @@ import Template from "../components/Template/template";
 const Landing = () => (
   <Template>
     <Hero />
-    {/* <Collage /> */}
+    <Collage />
   </Template>
 );
 

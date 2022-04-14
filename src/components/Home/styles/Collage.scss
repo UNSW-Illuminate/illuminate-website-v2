@@ -1,7 +1,9 @@
-.collageWrapper {
+#collageWrapper {
   height: 100%;
-  overflow: scroll;
-
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -9,28 +11,62 @@
   display: grid;
   position: relative;
   // row-gap: 100px;
-  column-gap: 200px;
-  row-gap: 200px;
-  grid-template-columns: repeat(8, 1fr);
+  column-gap: clamp(50px, 20%, 200px);
+  row-gap: clamp(50px, 20%, 200px);
+  grid-template-columns: repeat(10, 1fr);
   width: 125%;
+  margin: auto auto;
+  position: relative;
+
 }
 
 .gridItem1 {
   grid-column: 1 / span 3;
+  position: relative;
+
 }
 
 
 .gridItem2 {
   grid-column: 4 / span 3;
+  position: relative;
+
 }
 
 
 .gridItem3 {
   grid-column: 7 / span 3;
+  position: relative;
+
 }
 
 
 .gridItem4 {
   grid-column: 2 / span 3;
+  position: relative;
+
 }
 
+.gridItem5 {
+  grid-column: 5 / span 3;
+  position: relative;
+
+}
+
+
+.collageItem {
+  border-radius: 10px;
+  // filter: drop-shadow((0px 0px 20px #141414a8));
+  &:hover {
+    filter: brightness(1.5);
+    cursor: pointer;
+  }
+
+}
+
+.collageItemGlow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(20px);
+}
