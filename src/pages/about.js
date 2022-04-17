@@ -60,7 +60,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <img src={FigmaImg} style={{ marginTop: "100px" }} />
     </div>
   );
 };
