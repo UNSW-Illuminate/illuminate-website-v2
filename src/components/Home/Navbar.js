@@ -2,22 +2,22 @@ import { Link } from "gatsby";
 import * as React from "react";
 import "./styles/Navbar.scss";
 import navigations from "./nagivations";
-import logo from '../../images/logo.png';
+import logo from "../../images/logo.png";
 import { motion } from "framer-motion";
 
+// TODO: make header sticky with background onscroll
 const Navbar = ({ currentPage }) => {
-
   const getClass = (title, name) => {
     return currentPage.toLowerCase() == title.toLowerCase()
       ? `${name} selected-${name}`
       : `${name}`;
   };
-  
+
   return (
     <div className="nav">
       <Link to="/" className="brandContainer">
         <img src={logo} className="logo" alt="illuminate logo" />
-          <div>UNSW Illuminate</div>
+        <div>UNSW Illuminate</div>
       </Link>
       <div className="navLinkWrapper">
         <ul>
