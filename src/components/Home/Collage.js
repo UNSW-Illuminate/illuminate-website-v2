@@ -13,6 +13,10 @@ const Collage = () => {
 
   return (
     <div id="collageWrapper" ref={collage}>
+      {/* <div className="collageHeading">
+        We’re a student society that applies hands-on skills on large scale
+        multidisciplinary light projects!
+      </div> */}
       <div
         className="collage"
         onMouseMove={(e) => {

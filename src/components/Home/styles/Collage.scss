@@ -60,13 +60,39 @@
   &:hover {
     filter: brightness(1.5);
     cursor: pointer;
+   
+  }
+
+  &:hover + img {
+    filter: blur(20px);
   }
 
 }
+
+.gridItem1, .gridItem3, .gridItem5 {
+  &:hover .collageItemGlow{
+    filter: blur(40px);
+  }
+}
+
+.gridItem2, .gridItem4 {
+  &:hover .collageItemGlow{
+    filter: blur(20px);
+  }
+}
+
 
 .collageItemGlow {
   position: absolute;
   top: 0;
   left: 0;
-  filter: blur(20px);
+  transition: all 500ms ease;
+}
+
+.collageHeading {
+	margin-left: auto;
+	margin-right: auto;
+  font-size: 16pt;
+  max-width: 700px;
+  text-align: center;
 }
