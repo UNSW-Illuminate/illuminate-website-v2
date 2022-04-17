@@ -9,11 +9,13 @@ import instagram from "../../images/instagram.svg";
 import { motion } from "framer-motion";
 import { useForm } from "@formcarry/react";
 
+// TODO: make card to fit into viewport, snap effect
+// TODO:make send button works
+// TODO:change button text into send after a while
 const ContactCard = () => {
   const { state, submit } = useForm({
     id: "BmU1uVutW95",
   });
-  const [submitted, setSubmitted] = React.useState(false);
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
