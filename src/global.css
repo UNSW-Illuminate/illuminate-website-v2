@@ -3,7 +3,10 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #050505;
   color: white;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #050505;
 }

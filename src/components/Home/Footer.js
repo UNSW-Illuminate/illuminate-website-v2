@@ -9,6 +9,10 @@ import Facebook from "../../images/facebook.svg";
 import Instagram from "../../images/instagram.svg";
 import LinkedIn from "../../images/linkedin.svg";
 import Discord from "../../images/discord.svg";
+import {FaFacebookF} from "react-icons/fa";
+import {FaInstagram} from "react-icons/fa";
+import {FaDiscord} from "react-icons/fa";
+import {FaLinkedinIn} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -20,11 +24,21 @@ const Footer = () => {
             <p id="IlluminateText">UNSW Illuminate</p>
           </div>
           <div className="footer-media">
-            <Logo title="arcLogo" original={ArcLogoWhite} hover={ArcLogoGreen}/>
-            <Logo title="facebookLogo" original={Facebook} hover={Facebook}/>
-            <Logo title="instagramLogo" original={Instagram} hover={Instagram}/>
-            <Logo title="discordLogo" original={Discord} hover={Discord}/>
-            <Logo title="linkedInLogo" original={LinkedIn} hover={LinkedIn}/>
+            <div>
+              <Logo title="arcLogo" original={ArcLogoWhite} hover={ArcLogoGreen}/>
+            </div>
+            <div>
+              <FaFacebookF/>
+            </div>
+            <div>
+              <FaInstagram/>
+            </div>
+            <div>
+              <FaDiscord/>
+            </div>
+            <div>
+             <FaLinkedinIn/>
+            </div>
           </div>
         </div>
         <div className="footer-quick-links">
