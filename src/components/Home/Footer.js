@@ -5,10 +5,6 @@ import Illuminate from "../../images/logo.png";
 import Logo from "./Logo";
 import ArcLogoWhite from "../../images/arcLogoWhiteOutline.png";
 import ArcLogoGreen from "../../images/arcLogoGreenOutline.png";
-import Facebook from "../../images/facebook.svg";
-import Instagram from "../../images/instagram.svg";
-import LinkedIn from "../../images/linkedin.svg";
-import Discord from "../../images/discord.svg";
 import {FaFacebookF} from "react-icons/fa";
 import {FaInstagram} from "react-icons/fa";
 import {FaDiscord} from "react-icons/fa";
@@ -24,21 +20,31 @@ const Footer = () => {
             <p id="IlluminateText">UNSW Illuminate</p>
           </div>
           <div className="footer-media">
-            <div>
-              <Logo title="arcLogo" original={ArcLogoWhite} hover={ArcLogoGreen}/>
-            </div>
-            <div>
-              <FaFacebookF/>
-            </div>
-            <div>
-              <FaInstagram/>
-            </div>
-            <div>
-              <FaDiscord/>
-            </div>
-            <div>
-             <FaLinkedinIn/>
-            </div>
+            <Link to="https://www.arc.unsw.edu.au/">
+              <div>
+                <Logo title="arcLogo" original={ArcLogoWhite} hover={ArcLogoGreen}/>
+              </div>
+            </Link>
+            <Link to="https://www.facebook.com/unsw.illuminate/">
+              <div>
+                <FaFacebookF/>
+              </div>
+            </Link>
+            <Link to="https://www.instagram.com/unswilluminate/">
+              <div>
+                <FaInstagram/>
+              </div>
+            </Link>
+            <Link to="https://discord.gg/g6fcmh3Q8c">
+              <div>
+                <FaDiscord/>
+              </div>
+            </Link>
+            <Link to="https://www.linkedin.com/company/project-illuminate/">
+              <div>
+                <FaLinkedinIn/>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="footer-quick-links">
