@@ -1,0 +1,79 @@
+.wrapper {
+  padding: 100px;
+  max-width: 1300px;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.infoCont {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  height: 40vh;
+}
+
+.infoTitle {
+  display: flex;
+  font-size: 40pt;
+  font-weight: bold;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.valuesCont {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  // width: 900px;
+}
+
+
+.valueBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.valueHeading {
+  color: #06DAC2;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+.valueBody {
+  font-size: 14pt;
+  line-height: 1.9;
+}
+
+@media (max-width: 1200px) {
+  .infoTitle {
+    font-size: 20pt;
+  }
+
+  .valueHeading {
+    font-size: 15pt;
+  }
+
+  .valueBody {
+    font-size: 10pt;
+    line-height: 1.5;
+  }
+
+  .wrapper {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .infoCont {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .wrapper {
+    padding: 30px;
+  }
+}
