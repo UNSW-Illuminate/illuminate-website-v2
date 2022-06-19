@@ -1,0 +1,98 @@
+#collageWrapper {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.collage {
+  display: grid;
+  position: relative;
+  // row-gap: 100px;
+  column-gap: clamp(50px, 20%, 200px);
+  row-gap: clamp(50px, 20%, 200px);
+  grid-template-columns: repeat(10, 1fr);
+  width: 125%;
+  margin: auto auto;
+  position: relative;
+
+}
+
+.gridItem1 {
+  grid-column: 1 / span 3;
+  position: relative;
+
+}
+
+
+.gridItem2 {
+  grid-column: 4 / span 3;
+  position: relative;
+
+}
+
+
+.gridItem3 {
+  grid-column: 7 / span 3;
+  position: relative;
+
+}
+
+
+.gridItem4 {
+  grid-column: 2 / span 3;
+  position: relative;
+
+}
+
+.gridItem5 {
+  grid-column: 5 / span 3;
+  position: relative;
+
+}
+
+
+.collageItem {
+  border-radius: 10px;
+  // filter: drop-shadow((0px 0px 20px #141414a8));
+  &:hover {
+    filter: brightness(1.5);
+    cursor: pointer;
+   
+  }
+
+  &:hover + img {
+    filter: blur(20px);
+  }
+
+}
+
+.gridItem1, .gridItem3, .gridItem5 {
+  &:hover .collageItemGlow{
+    filter: blur(40px);
+  }
+}
+
+.gridItem2, .gridItem4 {
+  &:hover .collageItemGlow{
+    filter: blur(20px);
+  }
+}
+
+
+.collageItemGlow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+}
+
+.collageHeading {
+	margin-left: auto;
+	margin-right: auto;
+  font-size: 16pt;
+  max-width: 700px;
+  text-align: center;
+}
