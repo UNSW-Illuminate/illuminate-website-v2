@@ -1,14 +1,75 @@
 .container {
-  margin: 0 auto;
-  width: 1400px;
+  margin: 20px auto;
+  width: 80%;
 }
 
+.dropdownTabContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 // styles for dropdown menu
+.tabContainer {
+  display: flex;
+  flex-direction: column;
+}
 
+.tab {
+  height: 80px;
+  //width: 300px;
+  width: calc((100% - 300px) / 4);
+  // TODO: radius??
+  border-radius: 30px;
+  background-color: #222424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.tab-selected {
+  @extend .tab;
+  background-color: #3CA3AA;
+}
 
+.name {
+  font-size: 25px;
+  font-weight: 500;
+}
 
+.menu {
+  background-color: #222424;
+  border-radius: 30px;
+  width: calc((80vw - 300px) / 4);
+  position: absolute;
+  //transform: translateY(80px);
+}
 
+.item {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.itemSelectable {
+  @extend .item;
+  font-size: 25px;
+}
+
+.itemSelectable:hover {
+  background-color: #3CA3AA;
+}
+
+.itemLast {
+  @extend .itemSelectable;
+  border-radius: 0 0 30px 30px;
+}
+
+.subTeamName {
+  text-align: center;
+}
 
 
 
