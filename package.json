@@ -15,12 +15,13 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "framer-motion": "^6.2.8",
+    "framer-motion": "^6.2.9",
     "gatsby": "^4.9.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-sass": "^5.9.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-scroll": "^1.8.7",
     "sass": "^1.49.9"
   },
   "engines": {

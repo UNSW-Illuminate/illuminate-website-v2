@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  height: 100px;
+  height: 70px;
   width: 100%;
   align-items: center;
   background-color: inherit;
@@ -9,6 +9,8 @@
   * {
     background-color: inherit;
   }
+  z-index: 2;
+  position: fixed;
 }
 
 
