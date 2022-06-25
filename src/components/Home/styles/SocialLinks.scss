@@ -26,6 +26,7 @@
 .link {
   text-decoration: none;
   width: max-content;
+  margin-top: 40px;
 }
 
 .contact-button {
@@ -49,46 +50,13 @@
     border-radius: 50%;
     padding: 10px;
     background-color: #2FBBAA;
-    width: 36px;
-    height: 36px;
   }
 }
 
 .icon {
-  width: 36px;
-  height: 36px;
-}
-
-.icons-link {
-  border-radius: 50%;
-  padding: 10px;
-  width: 139px;
-  height: 139px;
-
-
-  // :hover {
-  //   background-color: #2FBBAA;
-  //   width: 36px;
-  //   height: 36px;
-  //   border-radius: 50%;
-  //   padding: 20px;
-  //   transition: all 200ms ease;
-  // }
-}
-
-/////////////////////////////////////////////
-.footer-icons {
-  background-color: #0E0E0E;
-  flex: 3;
-}
-
-.footer-illuminate {
-  background-color: #0E0E0E;
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
-  height: 100px;
-  :hover {
-    background-color: #2FBBAA;
-  }
+  align-items: center;
 }
-

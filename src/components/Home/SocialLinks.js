@@ -15,26 +15,33 @@ const SocialLinks = () => {
             <div className="icons-container">
                 <Link to="https://www.facebook.com/unsw.illuminate/" className="icon-link">
                     <div className="icon">
-                        <FaFacebookF/>
+                        <div className="facebook">
+                            <FaFacebookF/>
+                        </div>
                     </div>
                 </Link>
                 <Link to="https://www.instagram.com/unswilluminate/" className="icon-link">
                     <div className="icon">
-                        <FaInstagram/>
+                        <div className="instagram">
+                            <FaInstagram/>
+                        </div>
                     </div>
                 </Link>
                 <Link to="https://discord.gg/g6fcmh3Q8c" className="icon-link">
                     <div className="icon">
-                        <FaDiscord/>
+                        <div className="discord">
+                            <FaDiscord/>
+                        </div>
                     </div>
                 </Link>
                 <Link to="https://www.linkedin.com/company/project-illuminate/" className="icon-link">
                     <div className="icon">
-                        <FaLinkedinIn/>
+                        <div className="linkedin">
+                            <FaLinkedinIn/>
+                        </div>
                     </div>
                 </Link>
             </div>
-
             <Link to="/contact" className="link">
                 <div className="contact-button">
                     Contact us
