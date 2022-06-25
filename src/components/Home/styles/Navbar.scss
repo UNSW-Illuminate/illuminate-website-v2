@@ -1,8 +1,10 @@
 .nav {
   display: flex;
-  height: 100px;
+  height: 70px;
   width: 100%;
   align-items: center;
+  z-index: 2;
+  position: fixed;
 }
 
 
