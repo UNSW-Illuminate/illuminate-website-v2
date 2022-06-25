@@ -3,10 +3,10 @@ import Navbar from "../Home/Navbar";
 
 const Template = ({ children }) => {
   return (
-    <>
+    <div>
       <Navbar />
       {children}
-    </>
+    </div>
   );
 };
 

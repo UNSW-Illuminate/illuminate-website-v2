@@ -1,13 +1,16 @@
 import React from "react";
 import ContactCard from "../components/ContactCard/contactCard";
-import Template from "../components/Template/template";
-import './styles/Contact.scss'
+import Navbar from "../components/Home/Navbar";
+import "./styles/contact.scss";
 
 const Contact = () => (
-  <Template>
-        <div className="banner">Contact us</div>
-        <ContactCard />
-  </Template>
+  <div className="snapContainer">
+    <div className="snapElement">
+      <Navbar />
+      <div className="banner">Contact us</div>
+    </div>
+    <ContactCard className="snapElement" />
+  </div>
 );
 
 export default Contact;

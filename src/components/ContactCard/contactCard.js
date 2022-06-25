@@ -9,9 +9,6 @@ import instagram from "../../images/instagram.svg";
 import { motion } from "framer-motion";
 import { useForm } from "@formcarry/react";
 
-// TODO: make card to fit into viewport, snap effect
-// TODO:make send button works
-// TODO:change button text into send after a while
 const ContactCard = () => {
   const { state, submit } = useForm({
     id: "BmU1uVutW95",
@@ -40,11 +37,9 @@ const ContactCard = () => {
               height="36px"
               width="36px"
             />
-            <div>
-              <a href="mailto:admin@unswilluminate.com">
-                admin@unswilluminate.com
-              </a>
-            </div>
+            <a href="mailto:admin@unswilluminate.com">
+              admin@unswilluminate.com
+            </a>
           </div>
           <h2 className="subheading">Join us</h2>
           <motion.img
@@ -102,7 +97,7 @@ const ContactCard = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
             <motion.button whileHover={{ scale: 1.1 }} type="submit">
-              {state.submitted ? "We've got your message!" : "Send"}
+              {state.submitted ? "Sent!" : "Send"}
             </motion.button>
           </form>
         </div>
