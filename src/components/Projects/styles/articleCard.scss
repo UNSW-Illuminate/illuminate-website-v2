@@ -9,11 +9,18 @@
   align-items: center;
   gap: 50px;
   justify-content: center;
+  &:hover {
+    &>img {
+      width: 450px;
+    }
+    cursor: pointer;
+  }
 }
 
 .articleThumbnail {
   width: 400px;
   border-radius: 10px;
+  transition: all 200ms ease;
 }
 
 .articleInformation {
