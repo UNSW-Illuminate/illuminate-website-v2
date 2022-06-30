@@ -2,6 +2,7 @@ import React from "react";
 import DropdownMenu from "./DropdownMenu";
 import "./teamPhoto.scss";
 import { motion } from "framer-motion";
+import { MdExpandMore } from "react-icons/md";
 
 const DropdownTab = ({
   portfolio,
@@ -39,6 +40,7 @@ const DropdownTab = ({
         }}
       >
         <div className="name">{portfolio}</div>
+        <span className="expandIcon">{!noSubTeam && <MdExpandMore />}</span>
       </motion.div>
       {open[tabId] && !noSubTeam && (
         <DropdownMenu
