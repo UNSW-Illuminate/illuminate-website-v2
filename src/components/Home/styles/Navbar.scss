@@ -3,6 +3,12 @@
   height: 70px;
   width: 100%;
   align-items: center;
+  background-color: inherit;
+  position: sticky;
+  top: 0;
+  * {
+    background-color: inherit;
+  }
   z-index: 2;
   position: fixed;
 }
@@ -16,6 +22,10 @@
 
   div {
     font-size: 28px;
+
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
   }
 
   img {
@@ -26,57 +36,77 @@
   }
 }
 
-.menuContainer {
-  flex: 1;
-  list-style-type: none;
-  .link {
-    text-decoration: none;
-    font-size: 24px;
-    padding: 16px;
+.navLinkWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 24px;
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin-right: 3vw;
   }
 
   li {
-    float: left;
-    margin-right: 32px;
+    opacity: 1;
+    visibility: inherit;
+    transform: translate(0px, 0px);
+    margin-right: 4vw;
+  }
+  
+  .link {
+    text-decoration: none;
+    position: relative;
     display: block;
+    line-height: 1;
+    letter-spacing: .02em;
+  }
+
+  .link::after, .selected-link::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #2fbbaa;
+    transform: scaleX(0);    
+  }
+  
+  .link:hover::after, .selected-link::after {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.25s ease-out;
   }
 
   .inner {
-    overflow: hidden;
     position: relative;
     display: block;
+    overflow: hidden;
   }
 
-  // .link::after {
-  //   content: "";
-  //   position: absolute;
-  //   bottom: -10px;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 10px;
-  //   background-color:red;
-  // }
+  .link:hover .normal, .selected-normal {
+    transform: translateY(-100%);
+  }
 
   .normal {
     position: relative;
     display: block;
-  }
-
-  .normal:hover {
-    transform: translateY(-100%);
-    transition: transform .6s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform .6s cubic-bezier(.19, 1, .22, 1);
   }
 
   .hover {
     position: absolute;
     top: 0;
     left: 0;
-    color: #2fbbaa;
+    display: block;
     transform: translateY(calc(100% + 41px));
+    color: #79f4e4;
+    transition: transform .6s cubic-bezier(.19, 1, .22, 1);
   }
 
-  .normal:hover + .hover {
+  .link:hover .hover, .selected-hover {
     transform: translateY(0);
-    transition: transform .6s cubic-bezier(.19,1,.22,1);
   }
 }

@@ -4,7 +4,7 @@ import Hero from "../components/Home/Hero";
 import Template from "../components/Template/template";
 
 const Landing = () => (
-  <Template>
+  <Template currentPage="home">
     <Hero />
     <Collage />
   </Template>

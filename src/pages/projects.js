@@ -6,7 +6,7 @@ import ArticleCard from "../components/Projects/ArticleCard";
 
 const Projects = () => {
   return (
-    <Template>
+    <Template currentPage="projects">
       <div className="projectsPageWrapper">
         {/* <div>
         One of the main projects we have undertaken over the past 4 years is to
