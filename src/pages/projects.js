@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Template from "../components/Template/template";
 import * as styles from "../components/Projects/styles/projects.module.scss";
 import YearSelector from "../components/Projects/YearSelector";
 import ArticleCard from "../components/Projects/ArticleCard";
+import sanityClient from "../sanityClient.js";
 
 const Projects = () => {
+  const [articles, setArticles] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "project"] | order(creationDate desc) {
+        title,
+        slug,
+        location,
+        creationDate,
+        materials,
+        mainImage{
+          asset->{
+          _id,
+          url
+        }
+      }
+    }`
+      )
+      .then((data) => setArticles(data))
+      .catch(console.error);
+  }, []);
+
+  console.log(articles);
+
   return (
     <Template currentPage="projects">
       <div className={styles.wrapper}>
@@ -18,9 +44,10 @@ const Projects = () => {
       </div> */}
         <YearSelector />
         <div className={styles.cardsContainer}>
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
+          {articles &&
+            articles.map((article) => (
+              <ArticleCard key={article.slug.current} article={article} />
+            ))}
         </div>
       </div>
     </Template>
