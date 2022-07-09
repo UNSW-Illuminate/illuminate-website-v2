@@ -8,8 +8,12 @@ const AboutPage = () => {
   return (
     <Template currentPage="about">
       <div className={styles.wrapper}>
-        <Values />
-        <Journey />
+        <div className={styles.contentWrapper}>
+          <Values />
+        </div>
+        <div className={styles.contentWrapper}>
+          <Journey />
+        </div>
       </div>
     </Template>
   );
