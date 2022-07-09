@@ -1,10 +1,6 @@
-.articleCardWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-}
 
-.articleCard {
+
+.container {
   display: flex;
   align-items: center;
   gap: 50px;
@@ -17,32 +13,32 @@
   }
 }
 
-.articleThumbnail {
+.thumbnail {
   width: 400px;
   border-radius: 10px;
   transition: all 200ms ease;
 }
 
-.articleInformation {
+.information {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.articleTitle {
+.title {
   display: flex;
   font-size: 1.5rem;
   color: #2FBBAA;
   font-weight: 600;
 }
 
-.articleDescriptorWrapper {
+.descriptorWrapper {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.articleDescriptor {
+.descriptor {
   display: flex;
   font-size: 1.2rem;
   gap: 10px;

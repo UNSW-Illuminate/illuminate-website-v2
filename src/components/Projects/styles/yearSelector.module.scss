@@ -1,14 +1,6 @@
-.projectsPageWrapper {
-  padding: 100px;
-  max-width: 1100px;
-  margin: auto auto;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-}
 
 
-.ysWrapper {
+.wrapper {
   display: flex;
   flex-grow: 1;
   align-items: center;
@@ -18,7 +10,7 @@
   border-radius: 10px;
 }
 
-.ysSelectedYear {
+.selectedYear {
   background-color: #20BBA9;
   position: absolute;
   top: 0;
@@ -29,7 +21,7 @@
   z-index: -10;
 }
 
-.ysYear {
+.year {
   position: relative;
   flex-grow: 1;
   text-align: center;
