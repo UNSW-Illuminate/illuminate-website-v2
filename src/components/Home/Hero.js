@@ -6,7 +6,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 const Hero = () => {
   return (
-    <div className="heroWrapper">
+    <div className="heroWrapper wrapper">
       <SlideIn delay={0.5}>
         <div style={{ position: "relative" }} className="textWrapper">
           <div className="heroSubtitle">UNSW</div>
