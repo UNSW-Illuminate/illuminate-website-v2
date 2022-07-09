@@ -1,4 +1,4 @@
-.heroWrapper {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
 }
 
 
-.textWrapper {
+.heroBody {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@
 
 
 
-.heroTitle {
+.title {
   font-size: 8rem;
   // font-weight: 900;
   letter-spacing: 0.1rem;
@@ -43,9 +43,6 @@
     /* Laptop */
     font-size: 8rem;
   }
-
-
-
 }
 
 
@@ -67,7 +64,7 @@
 
 
 
-.heroSubtitle {
+.subtitle {
   font-size: 4rem;
   background-image: linear-gradient(
     45deg,
