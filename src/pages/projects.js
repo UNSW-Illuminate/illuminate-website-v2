@@ -7,6 +7,8 @@ import sanityClient from "../sanityClient.js";
 
 const Projects = () => {
   const [articles, setArticles] = useState(null);
+  const [displayedArticles, setDisplayedArticles] = useState(null);
+  const [selectedYear, setSelectedYear] = useState("All");
 
   useEffect(() => {
     sanityClient
@@ -25,11 +27,27 @@ const Projects = () => {
       }
     }`
       )
-      .then((data) => setArticles(data))
+      .then((data) => {
+        setArticles(data);
+        setDisplayedArticles(data);
+      })
       .catch(console.error);
   }, []);
 
-  console.log(articles);
+  useEffect(() => {
+    if (articles) {
+      if (selectedYear === "All") {
+        setDisplayedArticles(articles);
+        return;
+      }
+      setDisplayedArticles(
+        articles.filter(
+          (article) =>
+            article.creationDate.substring(0, 4) === selectedYear.toString()
+        )
+      );
+    }
+  }, [selectedYear]);
 
   return (
     <Template currentPage="projects">
@@ -42,10 +60,13 @@ const Projects = () => {
         companies, as well as UNSW, in projects that can brighten people’s every
         day lives.
       </div> */}
-        <YearSelector />
+        <YearSelector
+          selectedYear={selectedYear}
+          setSelectedYear={setSelectedYear}
+        />
         <div className={styles.cardsContainer}>
-          {articles &&
-            articles.map((article) => (
+          {displayedArticles &&
+            displayedArticles.map((article) => (
               <ArticleCard key={article.slug.current} article={article} />
             ))}
         </div>
