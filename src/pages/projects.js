@@ -12,21 +12,7 @@ const Projects = () => {
 
   useEffect(() => {
     sanityClient
-      .fetch(
-        `*[_type == "project"] | order(creationDate desc) {
-        title,
-        slug,
-        location,
-        creationDate,
-        materials,
-        mainImage{
-          asset->{
-          _id,
-          url
-        }
-      }
-    }`
-      )
+      .fetch(articleQuery)
       .then((data) => {
         setArticles(data);
         setDisplayedArticles(data);
@@ -52,14 +38,6 @@ const Projects = () => {
   return (
     <Template currentPage="projects">
       <div className={styles.wrapper}>
-        {/* <div>
-        One of the main projects we have undertaken over the past 4 years is to
-        design and actualise a large-scale installation for VIVID Sydney, the
-        world’s largest festival of Light, Music and Ideas. In 2020 we have
-        decided to branch out and collaborate with local communities and
-        companies, as well as UNSW, in projects that can brighten people’s every
-        day lives.
-      </div> */}
         <YearSelector
           selectedYear={selectedYear}
           setSelectedYear={setSelectedYear}
@@ -76,3 +54,26 @@ const Projects = () => {
 };
 
 export default Projects;
+
+const articleQuery = `*[_type == "project"] | order(creationDate desc) {
+  title,
+  slug,
+  location,
+  creationDate,
+  materials,
+  mainImage{
+    asset->{
+    _id,
+    url
+  }
+}
+}`;
+
+/* <div>
+        One of the main projects we have undertaken over the past 4 years is to
+        design and actualise a large-scale installation for VIVID Sydney, the
+        world’s largest festival of Light, Music and Ideas. In 2020 we have
+        decided to branch out and collaborate with local communities and
+        companies, as well as UNSW, in projects that can brighten people’s every
+        day lives.
+      </div> */

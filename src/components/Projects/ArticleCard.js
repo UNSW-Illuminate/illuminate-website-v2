@@ -4,10 +4,15 @@ import * as styles from "./styles/articleCard.module.scss";
 import { BsStack } from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { HiCalendar } from "react-icons/hi";
+import { motion } from "framer-motion";
 
 const ArticleCard = ({ article }) => {
   return (
-    <div className={styles.container}>
+    <motion.div
+      className={styles.container}
+      initial={{ y: -10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+    >
       <img className={styles.thumbnail} src={article.mainImage.asset.url}></img>
       <div className={styles.information}>
         <div className={styles.title}>{article.title}</div>
@@ -28,7 +33,7 @@ const ArticleCard = ({ article }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
