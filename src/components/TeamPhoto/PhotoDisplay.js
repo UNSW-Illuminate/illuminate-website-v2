@@ -10,16 +10,15 @@ const PhotoDisplay = ({ selected, data }) => {
     }
   };
 
-  if (!data[selected]) {
-    const team = findTeam(selected);
+  const team = findTeam(selected);
+  if (selected in data) {
     display = Object.values(data[team]).flat();
   } else {
-    display = data[selected][selected];
+    display = data[team][selected];
   }
 
   return (
     <div className="teamPhotoContainer">
-      Team Photo
       {display.map((e, i) => {
         return <img src={e} key={i}></img>;
       })}
