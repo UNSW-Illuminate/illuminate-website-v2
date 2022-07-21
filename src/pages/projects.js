@@ -4,6 +4,7 @@ import * as styles from "../components/Projects/styles/projects.module.scss";
 import YearSelector from "../components/Projects/YearSelector";
 import ArticleCard from "../components/Projects/ArticleCard";
 import sanityClient from "../sanityClient.js";
+import ArticlePage from "../components/Projects/ArticlePage";
 
 const Projects = () => {
   const [articles, setArticles] = useState(null);
@@ -42,12 +43,13 @@ const Projects = () => {
           selectedYear={selectedYear}
           setSelectedYear={setSelectedYear}
         />
-        <div className={styles.cardsContainer}>
+        {/* <div className={styles.cardsContainer}>
           {displayedArticles &&
             displayedArticles.map((article) => (
               <ArticleCard key={article.slug.current} article={article} />
             ))}
-        </div>
+        </div> */}
+        <ArticlePage />
       </div>
     </Template>
   );
