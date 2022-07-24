@@ -1,6 +1,6 @@
 import React from "react";
 import Template from "../components/Template/template";
-import "./styles/team.scss";
+// import "./styles/team.scss";
 
 const Team = () => (
   <Template currentPage="team">

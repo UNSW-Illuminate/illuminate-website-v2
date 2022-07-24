@@ -1,24 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./styles/Collage.scss";
+import * as styles from "./styles/Collage.module.scss";
 import synergy from "../../images/projects/synergy.jpg";
 import cube from "../../images/projects/cube.jpg";
 import crystallise from "../../images/projects/crystallise.jpg";
 import laneway from "../../images/projects/laneway.jpg";
 import pancake from "../../images/projects/pancake.jpg";
+
 const Collage = () => {
   const [transformStyle, setTransformStyle] = React.useState({});
   const collage = React.useRef(null);
   const [x, setX] = React.useState(0);
 
   return (
-    <div id="collageWrapper" ref={collage}>
+    <div id="collageWrapper" className={styles.collageWrapper} ref={collage}>
       {/* <div className="collageHeading">
         We’re a student society that applies hands-on skills on large scale
         multidisciplinary light projects!
       </div> */}
       <div
-        className="collage"
+        className={styles.collage}
         onMouseMove={(e) => {
           setTransformStyle({
             transform: `translate(${
@@ -37,30 +38,66 @@ const Collage = () => {
         }
         style={transformStyle}
       >
-        <div className="gridItem1">
-          <img src={laneway} alt="" className="collageItemGlow collageItem" />
-          <img src={laneway} alt="" className="gridItem3 collageItem" />
+        <div className={styles.gridItem1}>
+          <img
+            src={laneway}
+            alt=""
+            className={`${styles.collageItemGlow} ${styles.collageItem}`}
+          />
+          <img
+            src={laneway}
+            alt=""
+            className={`${styles.gridItem3} ${styles.collageItem}`}
+          />
         </div>
-        <div className="gridItem2">
-          <img src={pancake} alt="" className="collageItemGlow collageItem" />
-          <img src={pancake} alt="" className="gridItem2 collageItem" />
+        <div className={styles.gridItem2}>
+          <img
+            src={pancake}
+            alt=""
+            className={`${styles.collageItemGlow} ${styles.collageItem}`}
+          />
+          <img
+            src={pancake}
+            alt=""
+            className={`${styles.gridItem2} ${styles.collageItem}`}
+          />
         </div>
 
-        <div className="gridItem3">
-          <img src={synergy} alt="" className="collageItemGlow collageItem" />
-          <img src={synergy} alt="" className="gridItem1 collageItem" />
+        <div className={styles.gridItem3}>
+          <img
+            src={synergy}
+            alt=""
+            className={`${styles.collageItemGlow} ${styles.collageItem}`}
+          />
+          <img
+            src={synergy}
+            alt=""
+            className={`${styles.gridItem1} ${styles.collageItem}`}
+          />
         </div>
-        <div className="gridItem4">
+        <div className={styles.gridItem4}>
           <img
             src={crystallise}
             alt=""
-            className="collageItemGlow collageItem"
+            className={`${styles.collageItemGlow} ${styles.collageItem}`}
           />
-          <img src={crystallise} alt="" className="gridItem4 collageItem" />
+          <img
+            src={crystallise}
+            alt=""
+            className={`${styles.gridItem4} ${styles.collageItem}`}
+          />
         </div>
-        <div className="gridItem5">
-          <img src={cube} alt="" className="collageItemGlow collageItem" />
-          <img src={cube} alt="" className="gridItem5 collageItem" />
+        <div className={styles.gridItem5}>
+          <img
+            src={cube}
+            alt=""
+            className={`${styles.collageItemGlow} ${styles.collageItem}`}
+          />
+          <img
+            src={cube}
+            alt=""
+            className={`${styles.gridItem5} ${styles.collageItem}`}
+          />
         </div>
       </div>
     </div>

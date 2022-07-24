@@ -1,16 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
+import * as styles from "./styles/yearSelector.module.scss";
 
 const YearSelector = () => {
   const years = ["All", 2022, 2021, 2020, 2019, 2018, 2017, 2016];
   const [selectedYear, setSelectedYear] = React.useState("All");
 
   return (
-    <div className="ysWrapper">
+    <div className={styles.wrapper}>
       {years.map((year) => (
         <div
           key={year}
-          className={`ysYear`}
+          className={styles.year}
           onClick={() => setSelectedYear(year)}
         >
           {selectedYear === year && (
@@ -22,7 +23,7 @@ const YearSelector = () => {
                 },
               }}
               layoutId="highlight"
-              className="ysSelectedYear"
+              className={styles.selectedYear}
             ></motion.div>
           )}
           {year}
