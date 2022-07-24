@@ -43,13 +43,13 @@ const Projects = () => {
           selectedYear={selectedYear}
           setSelectedYear={setSelectedYear}
         />
-        {/* <div className={styles.cardsContainer}>
+        <div className={styles.cardsContainer}>
           {displayedArticles &&
             displayedArticles.map((article) => (
               <ArticleCard key={article.slug.current} article={article} />
             ))}
-        </div> */}
-        <ArticlePage />
+        </div>
+        {/* <ArticlePage /> */}
       </div>
     </Template>
   );
