@@ -4,29 +4,36 @@ import * as styles from "./styles/articleCard.module.scss";
 import { BsStack } from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { HiCalendar } from "react-icons/hi";
+import { motion } from "framer-motion";
 
-const ArticleCard = () => {
+const ArticleCard = ({ article }) => {
   return (
-    <div className={styles.container}>
-      <img className={styles.thumbnail} src={pancake}></img>
+    <motion.div
+      className={styles.container}
+      initial={{ y: -10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+    >
+      <img className={styles.thumbnail} src={article.mainImage.asset.url}></img>
       <div className={styles.information}>
-        <div className={styles.title}>Celestial Pancake</div>
+        <div className={styles.title}>{article.title}</div>
         <div className={styles.descriptorWrapper}>
           <div className={styles.descriptor}>
             <FaMapMarkerAlt />
-            Vivid
+            {article.location}
           </div>
           <div className={styles.descriptor}>
             <HiCalendar size={"1.1em"} />
-            2019
+            {article.creationDate.substring(0, 4)}
           </div>
           <div className={styles.descriptor}>
             <BsStack size={"1em"} />
-            Wood, LED, Optic Fibres
+            <div style={{ maxWidth: "230px" }}>
+              {article.materials.join(" · ")}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
