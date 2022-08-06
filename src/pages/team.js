@@ -4,7 +4,7 @@ import Template from "../components/Template/template";
 
 const Team = () => (
   <Template currentPage="team">
-    <div className="banner">Meet the Team</div>
+    {/* <div className="banner">Meet the Team</div> */}
   </Template>
 );
 
