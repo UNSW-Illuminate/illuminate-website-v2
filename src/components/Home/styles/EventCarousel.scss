@@ -1,0 +1,125 @@
+.container {
+  width: calc(100vw - 70px);
+  height: 100vh;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  * {border-radius: 20px;}
+}
+
+
+
+.displayContainer {
+  flex: 3;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.eventDisplaying {
+  height: 80%;
+  width: 70%;
+  position: relative;
+  overflow: hidden !important;
+
+  .imageDisplaying {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    color: black;
+    transform: translateY(500px);
+    background-color: #000000;
+    opacity: 0;
+    .content{
+      color: black;
+      position: absolute;
+      height: 100%;
+      
+      transform: translate(20px, 10px);
+      text-align: flex-start;
+
+      .eventName{
+        margin-bottom: 10px;
+      }
+
+      .eventDescription {
+        margin-right: 40px;
+      }
+
+      .eventDate {
+        bottom: 60px;
+        position: absolute;
+      }
+
+      .eventLocation {
+        bottom: 40px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.eventDisplaying:hover .overlay {
+  opacity: 0.8;
+  transform: translateX(0px);
+  transform: translateY(0px);
+}
+
+.eventListContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  margin-left: -100px;
+
+  .eventCard {
+    height: 180px;
+    width: 350px;
+    // margin: 40px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    .eventImage {
+      height: 80%;
+      width: 50%;
+      margin-right: 20px;
+      z-index: 2;
+    }
+
+    .eventContent {
+      z-index: 2;
+    }
+  }
+}
+
+.overviewContainer {
+  height: 60px;
+  width: 80%;
+  background-color: red;
+  position: absolute;
+  transform: translateY(250px);
+}
+
+.progressBar {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
