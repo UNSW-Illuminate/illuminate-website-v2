@@ -1,20 +1,12 @@
-.wrapper {
-  padding: 100px;
-  max-width: 1300px;
-  margin: auto auto;
-  display: flex;
-  flex-direction: column;
-  gap: 200px;
-}
 
-.infoCont {
+.container {
   display: flex;
   align-items: center;
   gap: 90px;
   height: 40vh;
 }
 
-.infoTitle {
+.title {
   display: flex;
   font-size: 40pt;
   font-weight: bold;
@@ -49,7 +41,7 @@
 }
 
 @media (max-width: 1200px) {
-  .infoTitle {
+  .title {
     font-size: 20pt;
   }
 
@@ -62,18 +54,18 @@
     line-height: 1.5;
   }
 
-  .wrapper {
-    padding: 40px;
-  }
+  // .wrapper {
+  //   padding: 40px;
+  // }
 }
 
 @media (max-width: 600px) {
-  .infoCont {
+  .container {
     flex-direction: column;
     gap: 0px;
   }
 
-  .wrapper {
-    padding: 30px;
-  }
+  // .wrapper {
+  //   padding: 30px;
+  // }
 }

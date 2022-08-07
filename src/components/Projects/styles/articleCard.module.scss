@@ -1,0 +1,49 @@
+
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  &:hover {
+    &>img {
+      width: 425px;
+      height: 305px;
+    }
+    cursor: pointer;
+  }
+}
+
+.thumbnail {
+  width: 400px;
+  height: 280px;
+  border-radius: 10px;
+  transition: all 200ms ease;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+}
+
+.title {
+  display: flex;
+  font-size: 1.5rem;
+  color: #2FBBAA;
+  font-weight: 600;
+}
+
+.descriptorWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.descriptor {
+  display: flex;
+  font-size: 1.2rem;
+  gap: 18px;
+  align-items: center;
+}

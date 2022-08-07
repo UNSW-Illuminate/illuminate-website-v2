@@ -1,4 +1,4 @@
-.heroWrapper {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
 }
 
 
-.textWrapper {
+.heroBody {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@
 
 
 
-.heroTitle {
+.title {
   font-size: 8rem;
   // font-weight: 900;
   letter-spacing: 0.1rem;
@@ -43,9 +43,6 @@
     /* Laptop */
     font-size: 8rem;
   }
-
-
-
 }
 
 
@@ -67,7 +64,7 @@
 
 
 
-.heroSubtitle {
+.subtitle {
   font-size: 4rem;
   background-image: linear-gradient(
     45deg,
@@ -142,18 +139,22 @@
   cursor: pointer;
   position: relative;
   z-index: 2;
-  background-image: linear-gradient(
-    45deg,
-    hsl(172deg 71% 41%) 0%,
-    hsl(166deg 67% 44%) 11%,
-
-  ); 
+  // background-image: linear-gradient(
+  //   45deg,
+  //   hsl(172deg 71% 41%) 0%,
+  //   hsl(166deg 67% 44%) 11%,
+  // ); 
   transition: all 200ms ease;
   top: 0;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  // box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  outline: 2px solid white;
+  
 
-  &:hover {
+  &:hover, &:focus {
     color: white;
-    top: -10px;
+    transition: all 300ms ease-in;
+    background-color: #27BB97;
+    outline: 0px;
+    // top: -10px;
   }
 }
