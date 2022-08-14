@@ -1,4 +1,4 @@
-import photo from "../../images/team/photo.png";
+import photo from "../../../images/team/photo.png";
 
 const data = {
   Executive: {

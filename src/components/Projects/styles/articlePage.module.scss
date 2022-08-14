@@ -1,0 +1,24 @@
+.heading {
+  display: flex;
+  font-size: 1.8rem;
+  color: #20bba9;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: -20px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.paragraph {
+  line-height: 3rem;
+  font-size: 1.3rem;
+}
+
+
+.galleryWrapper {
+  margin-top: 50px;
+}

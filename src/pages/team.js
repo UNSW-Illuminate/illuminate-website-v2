@@ -1,10 +1,9 @@
 import React from "react";
-import TeamPhoto from "../components/TeamPhoto/TeamPhoto";
+import TeamPhoto from "../components/Team/TeamPhoto/TeamPhoto";
 import Template from "../components/Template/template";
-import "./styles/team.scss";
 
 const Team = () => (
-  <Template>
+  <Template currentPage="team">
     <div className="banner">Meet the Team</div>
     <TeamPhoto />
   </Template>
