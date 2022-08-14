@@ -96,3 +96,41 @@
   max-width: 700px;
   text-align: center;
 }
+
+.projectTitle {
+  transition: opacity 400ms ease;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  // backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: #0a0d0ad5;
+  bottom: 0px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 1.8rem;
+}
+
+
+.collageItem {
+  transition: all 200ms ease-out;
+  display: flex;
+  &:hover {
+    div {
+      opacity: 100;
+    }
+  }
+  
+
+  
+}

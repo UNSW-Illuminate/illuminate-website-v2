@@ -5,6 +5,7 @@ import { BsStack } from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { HiCalendar } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { navigate } from "gatsby";
 
 const ArticleCard = ({ article }) => {
   console.log(article);
@@ -13,17 +14,18 @@ const ArticleCard = ({ article }) => {
       className={styles.container}
       initial={{ y: -10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
+      onClick={() => navigate(article.node.slug.current)}
     >
       <img
         className={styles.thumbnail}
         src={article.node.mainImage.asset.url}
       ></img>
       <div className={styles.information}>
-        <div className={styles.title}>{article.title}</div>
+        <div className={styles.title}>{article.node.title}</div>
         <div className={styles.descriptorWrapper}>
           <div className={styles.descriptor}>
             <FaMapMarkerAlt />
-            {article.location}
+            {article.node.location}
           </div>
           <div className={styles.descriptor}>
             <HiCalendar size={"1.1em"} />

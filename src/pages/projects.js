@@ -7,14 +7,13 @@ import sanityClient from "../sanityClient.js";
 import ArticlePage from "../components/Projects/ArticlePage";
 import { graphql } from "gatsby";
 
-const Projects = ({ data }) => {
+const Projects = ({ data, location }) => {
   const [displayedArticles, setDisplayedArticles] = useState(
     data.allSanityProject.edges
   );
-  const [selectedYear, setSelectedYear] = useState("All");
-
-  console.log(data);
-
+  const [selectedYear, setSelectedYear] = useState(
+    location.state?.year ? location.state.year : "All"
+  );
   useEffect(() => {
     if (selectedYear === "All") {
       setDisplayedArticles(data.allSanityProject.edges);
@@ -22,8 +21,7 @@ const Projects = ({ data }) => {
     }
     setDisplayedArticles(
       data.allSanityProject.edges.filter(
-        (article) =>
-          article.node.creationDate.substring(0, 4) === selectedYear.toString()
+        (article) => article.node.creationDate.substring(0, 4) === selectedYear
       )
     );
   }, [selectedYear]);
@@ -49,7 +47,7 @@ const Projects = ({ data }) => {
 export default Projects;
 
 export const query = graphql`
-  query MyQuery {
+  query Projects {
     allSanityProject(sort: { fields: creationDate, order: ASC }) {
       edges {
         node {

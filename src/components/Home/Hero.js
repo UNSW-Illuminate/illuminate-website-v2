@@ -21,7 +21,10 @@ const Hero = () => {
       </SlideIn>
       <SlideIn delay={0.9}>
         <Link to="collageWrapper" smooth={true}>
-          <button className={styles.projectsBtn}>See our Projects!</button>
+          <button className={styles.projectsBtn}>
+            See our Projects!
+            <div>See our Projects!</div>
+          </button>
         </Link>
       </SlideIn>
     </div>
