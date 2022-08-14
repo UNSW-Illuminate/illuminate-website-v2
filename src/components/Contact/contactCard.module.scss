@@ -1,0 +1,146 @@
+.wrapper {
+    padding: 100px;
+    max-width: 1250px;
+    margin: auto auto;
+    gap: 80px;
+}
+
+.container {
+    background-color: #161818;
+    border-radius: 20px;
+    display: flex;
+    padding: 50px;
+    scroll-snap-align: start;
+}
+
+.leftContainer {
+    flex: 1;
+    border-radius: inherit;
+    font-size: 1rem;
+
+    *:not(p) {
+        margin-bottom: 40px;
+    }
+
+
+    img {
+        margin-right: 30px;
+    }
+
+    .heading {
+        font-weight: bold;
+        font-size: 2.3rem;
+    }
+    
+    .instructions {
+        width: 90%;
+    }
+    
+    .subheading {
+        font-size: 1.6rem;
+        line-height: 0.2;
+        font-weight: 600;
+    }
+    
+    .emailSection {
+        display: flex;
+        margin: 20px 0;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .emailLogo {
+        margin-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+    
+    .socialsContainer {
+        display: flex;
+        margin-bottom: 20px;
+        height: 100px;
+    }
+    
+}
+
+.rightContainer {
+    flex: 1;
+    border-radius: inherit;
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+    font-size: 1.2rem;
+    
+    #infoCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        width:100%;
+        background-color: #111111;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 15px;
+        border: #222424 2.5px solid;
+        font-size: 1rem;
+        background-color: inherit;
+    }
+
+    input:focus {
+        outline: #2fbbaa 2px solid;
+    }
+
+    textarea {
+        resize: none;
+        border: #222424 2.5px solid;
+        font-size: 1rem;
+        padding: 12px;
+        height: 220px;
+        border-radius: 15px;
+        margin-top: 7px;
+        background-color: inherit;
+    }
+
+    textarea:focus {
+        outline: #2fbbaa 2px solid;
+    }
+
+    button {
+        background-color: #2fbbaa;
+        border: none;
+        color: white;
+        width: 100%;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 1.3rem;
+        position: relative;
+        cursor: pointer;
+        &:hover {
+            background-color: #219385;
+        }
+    }
+
+    .buttonProgress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: red;
+    }
+    
+    .inputWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+   
+    
+}
+

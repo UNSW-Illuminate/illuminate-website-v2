@@ -1,11 +1,14 @@
 import * as React from "react";
-import Landing from "./landing";
+import Collage from "../components/Home/Collage";
+import Hero from "../components/Home/Hero";
+import Template from "../components/Template/template";
 
 const IndexPage = () => {
   return (
-    <>
-      <Landing />
-    </>
+    <Template currentPage="home">
+      <Hero />
+      <Collage />
+    </Template>
   );
 };
 

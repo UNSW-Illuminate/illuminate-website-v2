@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar from "../Home/Navbar";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const Template = ({ children }) => {
+const Template = ({ children, currentPage }) => {
   return (
-    <div>
-      <Navbar />
+    <>
+      <Navbar currentPage={currentPage} />
       {children}
-    </div>
+      <ToastContainer theme="dark" />
+    </>
   );
 };
 

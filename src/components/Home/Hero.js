@@ -1,28 +1,30 @@
 import React from "react";
-import "./styles/Hero.scss";
+// import "./styles/Hero.scss";
+import * as styles from "./styles/Hero.module.scss";
 import SpotlightL from "../../images/spotlight-left.svg";
 import { motion } from "framer-motion";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Hero = () => {
   return (
-    <div className="heroWrapper">
+    <div className={styles.wrapper}>
       <SlideIn delay={0.5}>
-        <div style={{ position: "relative" }} className="textWrapper">
-          <div className="heroSubtitle">UNSW</div>
-          <h1 className="heroTitle">Illuminate</h1>
+        <div style={{ position: "relative" }} className={styles.heroBody}>
+          <div className={styles.subtitle}>UNSW</div>
+          <h1 className={styles.title}>Illuminate</h1>
           {/* <div className="heroTitle titleBlur">Illuminate</div> */}
-          <div className="glow"></div>
+          <div className={styles.glow}></div>
         </div>
       </SlideIn>
-
-      <SlideIn className="catchline" delay={0.7}>
+      <SlideIn className={styles.catchline} delay={0.7}>
         Art meets technology
       </SlideIn>
-      {/* <img src={SpotlightL} className="spotlight" /> */}
       <SlideIn delay={0.9}>
         <Link to="collageWrapper" smooth={true}>
-          <button className="projectsBtn">See our Projects!</button>
+          <button className={styles.projectsBtn}>
+            See our Projects!
+            <div>See our Projects!</div>
+          </button>
         </Link>
       </SlideIn>
     </div>
