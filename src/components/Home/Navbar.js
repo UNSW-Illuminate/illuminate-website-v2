@@ -5,7 +5,6 @@ import navigations from "./nagivations";
 import logo from "../../images/logo.png";
 import { motion } from "framer-motion";
 
-// TODO: make header sticky with background onscroll
 const Navbar = ({ currentPage }) => {
   const getClass = (title, name) => {
     return currentPage.toLowerCase() == title.toLowerCase()
