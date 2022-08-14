@@ -7,13 +7,17 @@ import { HiCalendar } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 const ArticleCard = ({ article }) => {
+  console.log(article);
   return (
     <motion.div
       className={styles.container}
       initial={{ y: -10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
     >
-      <img className={styles.thumbnail} src={article.mainImage.asset.url}></img>
+      <img
+        className={styles.thumbnail}
+        src={article.node.mainImage.asset.url}
+      ></img>
       <div className={styles.information}>
         <div className={styles.title}>{article.title}</div>
         <div className={styles.descriptorWrapper}>
@@ -23,12 +27,12 @@ const ArticleCard = ({ article }) => {
           </div>
           <div className={styles.descriptor}>
             <HiCalendar size={"1.1em"} />
-            {article.creationDate.substring(0, 4)}
+            {article.node.creationDate.substring(0, 4)}
           </div>
           <div className={styles.descriptor}>
             <BsStack size={"1em"} />
             <div style={{ maxWidth: "230px" }}>
-              {article.materials.join(" · ")}
+              {article.node.materials.join(" · ")}
             </div>
           </div>
         </div>

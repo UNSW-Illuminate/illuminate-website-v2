@@ -5,35 +5,27 @@ import YearSelector from "../components/Projects/YearSelector";
 import ArticleCard from "../components/Projects/ArticleCard";
 import sanityClient from "../sanityClient.js";
 import ArticlePage from "../components/Projects/ArticlePage";
+import { graphql } from "gatsby";
 
-const Projects = () => {
-  const [articles, setArticles] = useState(null);
-  const [displayedArticles, setDisplayedArticles] = useState(null);
+const Projects = ({ data }) => {
+  const [displayedArticles, setDisplayedArticles] = useState(
+    data.allSanityProject.edges
+  );
   const [selectedYear, setSelectedYear] = useState("All");
 
-  useEffect(() => {
-    sanityClient
-      .fetch(articleQuery)
-      .then((data) => {
-        setArticles(data);
-        setDisplayedArticles(data);
-      })
-      .catch(console.error);
-  }, []);
+  console.log(data);
 
   useEffect(() => {
-    if (articles) {
-      if (selectedYear === "All") {
-        setDisplayedArticles(articles);
-        return;
-      }
-      setDisplayedArticles(
-        articles.filter(
-          (article) =>
-            article.creationDate.substring(0, 4) === selectedYear.toString()
-        )
-      );
+    if (selectedYear === "All") {
+      setDisplayedArticles(data.allSanityProject.edges);
+      return;
     }
+    setDisplayedArticles(
+      data.allSanityProject.edges.filter(
+        (article) =>
+          article.node.creationDate.substring(0, 4) === selectedYear.toString()
+      )
+    );
   }, [selectedYear]);
 
   return (
@@ -44,10 +36,9 @@ const Projects = () => {
           setSelectedYear={setSelectedYear}
         />
         <div className={styles.cardsContainer}>
-          {displayedArticles &&
-            displayedArticles.map((article) => (
-              <ArticleCard key={article.slug.current} article={article} />
-            ))}
+          {displayedArticles.map((article) => (
+            <ArticleCard key={article.node.slug.current} article={article} />
+          ))}
         </div>
         {/* <ArticlePage /> */}
       </div>
@@ -57,19 +48,29 @@ const Projects = () => {
 
 export default Projects;
 
-const articleQuery = `*[_type == "project"] | order(creationDate desc) {
-  title,
-  slug,
-  location,
-  creationDate,
-  materials,
-  mainImage{
-    asset->{
-    _id,
-    url
+export const query = graphql`
+  query MyQuery {
+    allSanityProject(sort: { fields: creationDate, order: ASC }) {
+      edges {
+        node {
+          title
+          slug {
+            current
+          }
+          location
+          creationDate
+          materials
+          mainImage {
+            asset {
+              id
+              url
+            }
+          }
+        }
+      }
+    }
   }
-}
-}`;
+`;
 
 /* <div>
         One of the main projects we have undertaken over the past 4 years is to
