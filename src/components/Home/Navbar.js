@@ -13,8 +13,25 @@ const Navbar = ({ currentPage }) => {
       : `${name}`;
   };
 
+  const [hasScrolled, setHasScrolled] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 50);
+    };
+
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="nav">
+    <div
+      className="nav"
+      style={hasScrolled ? { backgroundColor: "#050505ea" } : {}}
+    >
       <Link to="/" className="brandContainer">
         <img src={logo} className="logo" alt="illuminate logo" />
         <div>UNSW Illuminate</div>

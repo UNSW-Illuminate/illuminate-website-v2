@@ -6,6 +6,7 @@ import cube from "../../images/projects/cube.jpg";
 import crystallise from "../../images/projects/crystallise.jpg";
 import laneway from "../../images/projects/laneway.jpg";
 import pancake from "../../images/projects/pancake.jpg";
+import { navigate } from "gatsby";
 
 const Collage = () => {
   const [transformStyle, setTransformStyle] = React.useState({});
@@ -38,7 +39,10 @@ const Collage = () => {
         }
         style={transformStyle}
       >
-        <div className={styles.gridItem1}>
+        <div
+          className={`${styles.collageItem} ${styles.gridItem1}`}
+          onClick={() => navigate("/projects/laneway")}
+        >
           <img
             src={laneway}
             alt=""
@@ -49,8 +53,12 @@ const Collage = () => {
             alt=""
             className={`${styles.gridItem3} ${styles.collageItem}`}
           />
+          <div className={styles.projectTitle}>Laneway</div>
         </div>
-        <div className={styles.gridItem2}>
+        <div
+          className={`${styles.collageItem} ${styles.gridItem2}`}
+          onClick={() => navigate("/projects/celestial-pancake")}
+        >
           <img
             src={pancake}
             alt=""
@@ -61,9 +69,12 @@ const Collage = () => {
             alt=""
             className={`${styles.gridItem2} ${styles.collageItem}`}
           />
+          <div className={styles.projectTitle}>Celestial Pancake</div>
         </div>
-
-        <div className={styles.gridItem3}>
+        <div
+          className={`${styles.collageItem} ${styles.gridItem3}`}
+          onClick={() => navigate("/projects/synergy")}
+        >
           <img
             src={synergy}
             alt=""
@@ -74,8 +85,12 @@ const Collage = () => {
             alt=""
             className={`${styles.gridItem1} ${styles.collageItem}`}
           />
+          <div className={styles.projectTitle}>Synergy</div>
         </div>
-        <div className={styles.gridItem4}>
+        <div
+          className={`${styles.collageItem} ${styles.gridItem4}`}
+          onClick={() => navigate("/projects/crystallise")}
+        >
           <img
             src={crystallise}
             alt=""
@@ -86,8 +101,12 @@ const Collage = () => {
             alt=""
             className={`${styles.gridItem4} ${styles.collageItem}`}
           />
+          <div className={styles.projectTitle}>Crystallise</div>
         </div>
-        <div className={styles.gridItem5}>
+        <div
+          className={`${styles.collageItem} ${styles.gridItem5}`}
+          onClick={() => navigate("/projects/mondrian-cube")}
+        >
           <img
             src={cube}
             alt=""
@@ -98,6 +117,7 @@ const Collage = () => {
             alt=""
             className={`${styles.gridItem5} ${styles.collageItem}`}
           />
+          <div className={styles.projectTitle}>Mondrian Cube</div>
         </div>
       </div>
     </div>
