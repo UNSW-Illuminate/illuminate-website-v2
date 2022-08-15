@@ -30,6 +30,8 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  
 }
 
 
@@ -63,10 +65,9 @@
 
 .menu {
   background-color: #222424;
-  border-radius: 30px;
-  width: calc((80vw - 300px) / 4);
+  border-radius: 25px;
   position: absolute;
-  //transform: translateY(80px);
+  left: 0;
 }
 
 .item {

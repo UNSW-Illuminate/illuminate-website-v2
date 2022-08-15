@@ -20,13 +20,13 @@ const PhotoDisplay = ({ selected, data }) => {
 
   return (
     <div className={styles.teamPhotoContainer}>
-      {display.map((e, i) => {
+      {display.map((person, i) => {
         return (
           <div key={i} className={styles.headshotWrapper}>
-            <img src={e} className={styles.headshot} />
+            <img src={person.img} className={styles.headshot} />
             <div className={styles.headshotDescriptor}>
-              <h2 className={styles.memberName}>Timothy Jing</h2>
-              <h3 className={styles.role}>Art and Design Director</h3>
+              <h2 className={styles.memberName}>{person.name}</h2>
+              <h3 className={styles.role}>{person.role}</h3>
             </div>
           </div>
         );

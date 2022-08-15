@@ -1,23 +1,68 @@
-import photo from "../../images/team/photo.jpg";
+import photo from "../../images/team/timothy.jpg";
+import president from "../../images/team/nathan.jpg";
+import vicePresident from "../../images/team/daphne.jpg";
+import softwareColead1 from "../../images/team/allan.png";
+import softwareColead2 from "../../images/team/sano.jpg";
 
 const data = {
   Executive: {
-    Executive: [photo, photo, photo],
+    Executive: [
+      {
+        name: "Nathan Quan",
+        role: "President",
+        img: president,
+      },
+      {
+        name: "Daphne Li",
+        role: "Vice President",
+        img: vicePresident,
+      },
+    ],
   },
 
   Technical: {
-    Software: [photo, photo, photo],
-    Electrical: [photo, photo],
-    Mechanical: [photo],
+    Technical: [
+      {
+        name: "Allan Goodman",
+        role: "Software Colead",
+        img: softwareColead1,
+      },
+      {
+        name: "Sanojan Thiyagaraja",
+        role: "Software Colead",
+        img: softwareColead2,
+      },
+    ],
+    // Mechanical: [],
+    // Electrical: [],
+    // Software: [],
   },
 
   Admin: {
-    "Finance & Sponsorship": [photo, photo, photo],
-    Marketing: [photo, photo, photo, photo, photo],
+    "Finance & Sponsorship": [
+      {
+        name: "Timothy Jing",
+        role: "Art and Design Director",
+        img: photo,
+      },
+    ],
+    Marketing: [
+      {
+        name: "Timothy Jing",
+        role: "Art and Design Director",
+        img: photo,
+      },
+    ],
   },
 
   "Art and Design": {
-    "Art and Design": [photo, photo, photo, photo],
+    "Art and Design": [
+      {
+        name: "Timothy Jing",
+        role: "Art and Design Director",
+        img: photo,
+      },
+    ],
   },
 };
 

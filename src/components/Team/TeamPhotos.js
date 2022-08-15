@@ -6,7 +6,7 @@ import "../generalStyles.scss";
 import * as styles from "./styles/team.module.scss";
 
 const TeamPhotos = () => {
-  const [selected, setSelected] = React.useState("Software");
+  const [selected, setSelected] = React.useState("Executive");
   const [open, setOpen] = React.useState({
     0: false,
     1: false,

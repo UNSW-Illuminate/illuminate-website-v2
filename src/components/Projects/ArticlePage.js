@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import sanityClient from "../../sanityClient.js";
 import * as styles from "./styles/articlePage.module.scss";
 import { wrapper } from "./styles/projects.module.scss";
-import { motion } from "framer-motion";
+import { LayoutGroup, motion } from "framer-motion";
 import Template from "../Template/template";
 import YearSelector from "./YearSelector.js";
 import { graphql, navigate } from "gatsby";
@@ -21,10 +21,14 @@ const ArticlePage = ({ data }) => {
   return (
     <Template currentPage="projects">
       <div className={wrapper}>
-        <YearSelector
-          selectedYear={article.creationDate.substring(0, 4)}
-          setSelectedYear={(year) => navigate("/projects", { state: { year } })}
-        />
+        <LayoutGroup id="projectPageYearSelector">
+          <YearSelector
+            selectedYear={article.creationDate.substring(0, 4)}
+            setSelectedYear={(year) =>
+              navigate("/projects", { state: { year } })
+            }
+          />
+        </LayoutGroup>
         {article && (
           <div>
             <motion.h2

@@ -40,11 +40,11 @@ const DropdownTab = ({
         }}
       >
         <div className={styles.name}>{portfolio}</div>
-        <span className={styles.expandIcon}>
+        {/* <span className={styles.expandIcon}>
           {!noSubTeam && <MdExpandMore size="0.6em" />}
-        </span>
+        </span> */}
       </motion.div>
-      {open[tabId] && !noSubTeam && (
+      {/* {open[tabId] && !noSubTeam && (
         <DropdownMenu
           name={portfolio}
           subTeam={subTeam}
@@ -52,7 +52,7 @@ const DropdownTab = ({
           setSelected={setSelected}
           setOpen={setOpen}
         />
-      )}
+      )} */}
     </>
   );
 };
