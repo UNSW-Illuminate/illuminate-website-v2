@@ -1,8 +1,8 @@
-import photo from "../../images/team/photo.png";
+import photo from "../../images/team/photo.jpg";
 
 const data = {
   Executive: {
-    Executive: [photo, photo, photo, photo, photo],
+    Executive: [photo, photo, photo],
   },
 
   Technical: {

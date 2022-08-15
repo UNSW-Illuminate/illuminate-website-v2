@@ -1,6 +1,6 @@
 import React from "react";
 import DropdownMenu from "./DropdownMenu";
-// import "../styles/teamPhotos.scss";
+import * as styles from "./styles/team.module.scss";
 import { motion } from "framer-motion";
 import { MdExpandMore } from "react-icons/md";
 
@@ -33,14 +33,16 @@ const DropdownTab = ({
   return (
     <>
       <motion.div
-        className={isSelected ? "tab-selected" : "tab"}
+        className={isSelected ? styles.tabSelected : styles.tab}
         onClick={handleClick}
         whileHover={{
-          scale: 1.2,
+          scale: 1.1,
         }}
       >
-        <div className="name">{portfolio}</div>
-        <span className="expandIcon">{!noSubTeam && <MdExpandMore />}</span>
+        <div className={styles.name}>{portfolio}</div>
+        <span className={styles.expandIcon}>
+          {!noSubTeam && <MdExpandMore size="0.6em" />}
+        </span>
       </motion.div>
       {open[tabId] && !noSubTeam && (
         <DropdownMenu

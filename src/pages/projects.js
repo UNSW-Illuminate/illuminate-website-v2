@@ -29,6 +29,7 @@ const Projects = ({ data, location }) => {
   return (
     <Template currentPage="projects">
       <div className={styles.wrapper}>
+        <h1 className="pageHeading">Our Projects</h1>
         <YearSelector
           selectedYear={selectedYear}
           setSelectedYear={setSelectedYear}
@@ -48,7 +49,7 @@ export default Projects;
 
 export const query = graphql`
   query Projects {
-    allSanityProject(sort: { fields: creationDate, order: ASC }) {
+    allSanityProject(sort: { fields: creationDate, order: DESC }) {
       edges {
         node {
           title

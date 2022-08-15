@@ -1,4 +1,5 @@
 import React from "react";
+import * as styles from "./styles/team.module.scss";
 
 const PhotoDisplay = ({ selected, data }) => {
   let display = [];
@@ -18,9 +19,17 @@ const PhotoDisplay = ({ selected, data }) => {
   }
 
   return (
-    <div className="teamPhotoContainer">
+    <div className={styles.teamPhotoContainer}>
       {display.map((e, i) => {
-        return <img src={e} key={i}></img>;
+        return (
+          <div key={i} className={styles.headshotWrapper}>
+            <img src={e} className={styles.headshot} />
+            <div className={styles.headshotDescriptor}>
+              <h2 className={styles.memberName}>Timothy Jing</h2>
+              <h3 className={styles.role}>Art and Design Director</h3>
+            </div>
+          </div>
+        );
       })}
     </div>
   );
