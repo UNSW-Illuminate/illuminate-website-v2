@@ -6,7 +6,6 @@ import logo from "../../images/logo.png";
 import { motion } from "framer-motion";
 
 const Navbar = ({ currentPage }) => {
-  console.log(currentPage);
   const getClass = (title, name) => {
     return currentPage.toLowerCase() == title.toLowerCase()
       ? `${name} selected-${name}`

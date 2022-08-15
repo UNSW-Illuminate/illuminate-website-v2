@@ -10,7 +10,6 @@ import ImageGallery from "react-image-gallery";
 
 const ArticlePage = ({ data }) => {
   const article = data.allSanityProject.edges[0].node;
-  console.log(article);
   const photos = article.gallery.map((photo) => {
     return {
       original: photo.asset.publicUrl,
@@ -23,7 +22,7 @@ const ArticlePage = ({ data }) => {
     <Template currentPage="projects">
       <div className={wrapper}>
         <YearSelector
-          selectedYear="2018"
+          selectedYear={article.creationDate.substring(0, 4)}
           setSelectedYear={(year) => navigate("/projects", { state: { year } })}
         />
         {article && (
