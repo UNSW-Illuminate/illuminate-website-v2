@@ -9,6 +9,9 @@
   border-radius: 10px;
   width: 100%;
   margin-bottom: 80px;
+  @media (max-width: 500px) {
+    width: 90vw;
+  }
 }
 
 .selectedYear {
@@ -20,6 +23,8 @@
   width: 100%;
   height: 100%;
   z-index: -10;
+
+
 }
 
 .year {
@@ -34,4 +39,33 @@
   &:hover {
     background-color: rgb(18, 18, 18);
   }
+}
+
+
+.mobileTrigger {
+  background-color: #161818;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 1.3rem;
+}
+
+.mobileContent {
+  background-color: #161818;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobileItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
