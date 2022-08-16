@@ -82,8 +82,7 @@ const ContactCard = () => {
             >
               <motion.img
                 src={arc}
-                height="70px"
-                width="70px"
+                className={styles.socialsIcon}
                 whileHover={{ scale: 1.2 }}
               />
             </a>
@@ -94,9 +93,8 @@ const ContactCard = () => {
             >
               <motion.img
                 src={discord}
-                height="70px"
-                width="70px"
                 whileHover={{ scale: 1.2 }}
+                className={styles.socialsIcon}
               />
             </a>
           </div>
@@ -110,8 +108,7 @@ const ContactCard = () => {
             >
               <motion.img
                 src={facebook}
-                height="70px"
-                width="70px"
+                className={styles.socialsIcon}
                 whileHover={{ scale: 1.2 }}
               />
             </a>
@@ -122,8 +119,7 @@ const ContactCard = () => {
             >
               <motion.img
                 src={linkedin}
-                height="70px"
-                width="70px"
+                className={styles.socialsIcon}
                 whileHover={{ scale: 1.2 }}
               />
             </a>
@@ -134,8 +130,7 @@ const ContactCard = () => {
             >
               <motion.img
                 src={instagram}
-                height="70px"
-                width="70px"
+                className={styles.socialsIcon}
                 whileHover={{ scale: 1.2 }}
               />
             </a>
