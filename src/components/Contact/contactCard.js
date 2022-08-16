@@ -51,7 +51,11 @@ const ContactCard = () => {
 
   return (
     <>
-      <div className={styles.container}>
+      <motion.div
+        className={styles.container}
+        initial={{ y: -10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+      >
         <div className={styles.leftContainer}>
           <h2 className={styles.heading}>Get in Touch!</h2>
           <p className={styles.instructions}>
@@ -169,7 +173,7 @@ const ContactCard = () => {
             <button type="submit">Send</button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
