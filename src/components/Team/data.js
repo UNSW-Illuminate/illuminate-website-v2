@@ -5,7 +5,7 @@ import softwareColead1 from "../../images/team/allan.png";
 import softwareColead2 from "../../images/team/sano.jpg";
 import adminManager from "../../images/team/dominique.jpeg";
 import eventsLead from "../../images/team/zami.png";
-import fSLead from "../../images/team/mohique.jpg";
+import fSLead from "../../images/team/mohique.jpeg";
 import marketingColead1 from "../../images/team/charlotte.jpeg";
 import generic from "../../images/team/generic.png";
 
