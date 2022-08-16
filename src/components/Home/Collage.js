@@ -12,7 +12,15 @@ import { navigate } from "gatsby";
 const Collage = () => {
   const [transformStyle, setTransformStyle] = React.useState({});
   const collage = React.useRef(null);
-  const [x, setX] = React.useState(0);
+
+  const handleBrowse = (e) => {
+    setTransformStyle({
+      transform: `translate(${
+        collage.current.clientWidth / 2 - e.clientX
+      }px , ${collage.current.clientHeight / 2 - e.clientY}px)`,
+      transition: "all 5000ms ease-out",
+    });
+  };
 
   return (
     <div id="collageWrapper" className={styles.collageWrapper} ref={collage}>
@@ -22,14 +30,7 @@ const Collage = () => {
       </div> */}
       <div
         className={styles.collage}
-        onMouseMove={(e) => {
-          setTransformStyle({
-            transform: `translate(${
-              collage.current.clientWidth / 2 - e.clientX
-            }px , ${collage.current.clientHeight / 2 - e.clientY}px)`,
-            transition: "all 5000ms ease-out",
-          });
-        }}
+        onMouseMove={(e) => handleBrowse(e)}
         onMouseLeave={(e) =>
           setTimeout(() => {
             setTransformStyle({

@@ -35,7 +35,7 @@ const Navbar = ({ currentPage }) => {
         <img src={logo} className="logo" alt="illuminate logo" />
         <div>UNSW Illuminate</div>
       </Link>
-      <div className="navLinkWrapper">
+      {/* <div className="navLinkWrapper">
         <ul>
           {navigations.map((nav, index) => (
             <li key={index}>
@@ -52,7 +52,7 @@ const Navbar = ({ currentPage }) => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

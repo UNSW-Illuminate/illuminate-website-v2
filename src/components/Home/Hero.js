@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className={styles.wrapper}>
       <SlideIn delay={0.5}>
-        <div style={{ position: "relative" }} className={styles.heroBody}>
+        <div className={styles.heroBody}>
           <div className={styles.subtitle}>UNSW</div>
           <h1 className={styles.title}>Illuminate</h1>
           {/* <div className="heroTitle titleBlur">Illuminate</div> */}

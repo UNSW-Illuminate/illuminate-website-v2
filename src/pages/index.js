@@ -6,7 +6,10 @@ import Template from "../components/Template/template";
 const IndexPage = () => {
   return (
     <Template currentPage="home">
-      <title>UNSW Illuminate</title>
+      <head>
+        <title>UNSW Illuminate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <Hero />
       <Collage />
     </Template>
@@ -14,3 +17,7 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export function Head() {
+  return <title>Hello World</title>;
+}
