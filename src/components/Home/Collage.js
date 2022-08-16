@@ -12,6 +12,7 @@ import { navigate } from "gatsby";
 const Collage = () => {
   const [transformStyle, setTransformStyle] = React.useState({});
   const collage = React.useRef(null);
+  const [x, setX] = React.useState(0);
 
   const handleBrowse = (e) => {
     setTransformStyle({
@@ -28,9 +29,11 @@ const Collage = () => {
         We’re a student society that applies hands-on skills on large scale
         multidisciplinary light projects!
       </div> */}
+
       <div
         className={styles.collage}
         onMouseMove={(e) => handleBrowse(e)}
+        onTouchMove={(e) => handleBrowse(e)}
         onMouseLeave={(e) =>
           setTimeout(() => {
             setTransformStyle({
