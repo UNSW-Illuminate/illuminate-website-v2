@@ -22,7 +22,7 @@ const PhotoDisplay = ({ selected, data }) => {
     <div className={styles.teamPhotoContainer}>
       {display.map((person, i) => {
         return (
-          <div key={i} className={styles.headshotWrapper}>
+          <div key={person.memberName} className={styles.headshotWrapper}>
             <img src={person.img} className={styles.headshot} />
             <div className={styles.headshotDescriptor}>
               <h2 className={styles.memberName}>{person.name}</h2>
