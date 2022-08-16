@@ -52,6 +52,7 @@
   align-items: center;
   margin-bottom: 40px;
   font-size: 1.3rem;
+
 }
 
 .mobileContent {
@@ -62,10 +63,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
 }
 
 .mobileItem {
   display: flex;
   align-items: center;
-  gap: 10px;
+  cursor: pointer;
 }

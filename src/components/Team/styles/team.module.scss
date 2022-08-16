@@ -17,6 +17,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  @media (max-width: 500px) {
+    padding: 50px;
+  }
 }
 
 .container {
@@ -24,6 +28,7 @@
   flex-direction: column;
   width: 80%;
   gap: 20px;
+
 }
 
 .dropdownTabContainer {
@@ -51,6 +56,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  
 }
 
 .tabSelected {
@@ -104,6 +110,13 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
   row-gap: 30px;
+  
+    
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+  
+  
 }
 
 .expandIcon {
@@ -160,4 +173,35 @@
       background-color: #1e1e1e;
     }
   }
+}
+
+
+.mobileTrigger {
+  background-color: #161818;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.3rem;
+  justify-content: space-between;
+}
+
+.mobileContent {
+  background-color: #161818;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobileItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  cursor: pointer;
 }
