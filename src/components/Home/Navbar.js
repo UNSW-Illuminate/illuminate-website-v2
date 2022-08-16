@@ -4,6 +4,9 @@ import "./styles/Navbar.scss";
 import navigations from "./nagivations";
 import logo from "../../images/logo.png";
 import { motion } from "framer-motion";
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
+import { AiOutlineMenu } from "react-icons/ai";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 const Navbar = ({ currentPage }) => {
   const getClass = (title, name) => {
@@ -26,6 +29,8 @@ const Navbar = ({ currentPage }) => {
     };
   }, []);
 
+  const isLandscape = useMediaQuery("(min-width: 900px)");
+
   return (
     <div
       className="nav"
@@ -35,24 +40,58 @@ const Navbar = ({ currentPage }) => {
         <img src={logo} className="logo" alt="illuminate logo" />
         <div>UNSW Illuminate</div>
       </Link>
-      {/* <div className="navLinkWrapper">
-        <ul>
-          {navigations.map((nav, index) => (
-            <li key={index}>
-              <Link to={nav.link} className={getClass(nav.title, "link")}>
-                <span className="inner">
-                  <span className={getClass(nav.title, "normal")}>
-                    {nav.title}
+      {!isLandscape ? (
+        <DropdownMenu.Root>
+          <DropdownMenu.Trigger
+            style={{ background: "none", border: "none", cursor: "pointer" }}
+          >
+            <AiOutlineMenu size="1.8em" />
+          </DropdownMenu.Trigger>
+          <DropdownMenu.Portal>
+            <DropdownMenu.Content>
+              <motion.div
+                className="dropdownMenu"
+                initial={{ y: -10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+              >
+                {navigations.map((nav, index) => (
+                  <Link
+                    to={nav.link}
+                    className={getClass(nav.title, "link")}
+                    style={{ width: "100%" }}
+                    key={index}
+                  >
+                    <DropdownMenu.Item
+                      style={{ width: "100%", color: "inherit" }}
+                    >
+                      {nav.title}
+                    </DropdownMenu.Item>
+                  </Link>
+                ))}
+              </motion.div>
+            </DropdownMenu.Content>
+          </DropdownMenu.Portal>
+        </DropdownMenu.Root>
+      ) : (
+        <div className="navLinkWrapper">
+          <ul>
+            {navigations.map((nav, index) => (
+              <li key={index}>
+                <Link to={nav.link} className={getClass(nav.title, "link")}>
+                  <span className="inner">
+                    <span className={getClass(nav.title, "normal")}>
+                      {nav.title}
+                    </span>
+                    <span className={getClass(nav.title, "hover")}>
+                      {nav.title}
+                    </span>
                   </span>
-                  <span className={getClass(nav.title, "hover")}>
-                    {nav.title}
-                  </span>
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div> */}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
