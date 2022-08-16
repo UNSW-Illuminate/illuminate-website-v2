@@ -1,9 +1,14 @@
 import React from "react";
 import * as styles from "./styles/values.module.scss";
+import { motion } from "framer-motion";
 
 const Values = () => {
   return (
-    <div className={styles.container}>
+    <motion.div
+      className={styles.container}
+      initial={{ y: -10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+    >
       <div className={styles.title}>Our culture, values and beliefs</div>
       <div className={styles.valuesCont}>
         {values.map((value) => (
@@ -13,7 +18,7 @@ const Values = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

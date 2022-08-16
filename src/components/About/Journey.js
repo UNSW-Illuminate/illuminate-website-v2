@@ -3,12 +3,18 @@ import * as styles from "./styles/journey.module.scss";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import timeline from "../../images/illuminateTimeline.svg";
 import verticalTimeline from "../../images/verticalTimeline.svg";
+import { motion } from "framer-motion";
 
 const Journey = () => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
 
   return (
-    <div className={styles.container}>
+    <motion.div
+      className={styles.container}
+      initial={{ y: -10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.1 }}
+    >
       <div className={styles.title}>Our Journey</div>
       <div className={styles.timelineCont}>
         <div className={styles.timelineGrid}>
@@ -27,7 +33,7 @@ const Journey = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
