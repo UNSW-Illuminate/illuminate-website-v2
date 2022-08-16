@@ -6,6 +6,7 @@ import * as styles from "../components/Contact/contactCard.module.scss";
 
 const Contact = () => (
   <Template currentPage="contact">
+    <title>Contact | UNSW Illuminate</title>
     <div className={styles.wrapper}>
       <ContactCard className="snapElement" />
     </div>

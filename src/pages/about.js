@@ -7,6 +7,7 @@ import Journey from "../components/About/Journey";
 const AboutPage = () => {
   return (
     <Template currentPage="about">
+      <title>About | UNSW Illuminate</title>
       <div className={styles.wrapper}>
         <div className={styles.contentWrapper}>
           <Values />

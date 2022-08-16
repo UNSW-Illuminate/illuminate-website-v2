@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import { navigate } from "gatsby";
 
 const ArticleCard = ({ article }) => {
-  console.log(article);
   return (
     <motion.div
       className={styles.container}

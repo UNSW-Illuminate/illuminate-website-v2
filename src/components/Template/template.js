@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Navbar from "../Home/Navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
 
 const Template = ({ children, currentPage }) => {
   return (
