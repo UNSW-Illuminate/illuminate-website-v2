@@ -10,10 +10,9 @@
 .collage {
   display: grid;
   position: relative;
-  // row-gap: 100px;
   column-gap: clamp(50px, 20%, 200px);
   row-gap: clamp(50px, 20%, 200px);
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(11, 1fr);
   width: 125%;
   margin: auto auto;
   position: relative;
@@ -49,6 +48,13 @@
 
 .gridItem5 {
   grid-column: 5 / span 3;
+  position: relative;
+
+}
+
+
+.gridItem6 {
+  grid-column: 8 / span 3;
   position: relative;
 
 }

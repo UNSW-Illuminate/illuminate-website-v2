@@ -6,6 +6,7 @@ import ArticleCard from "../components/Projects/ArticleCard";
 import sanityClient from "../sanityClient.js";
 import ArticlePage from "../components/Projects/ArticlePage";
 import { graphql } from "gatsby";
+import { motion } from "framer-motion";
 
 const Projects = ({ data, location }) => {
   const [displayedArticles, setDisplayedArticles] = useState(
@@ -29,7 +30,13 @@ const Projects = ({ data, location }) => {
   return (
     <Template currentPage="projects">
       <div className={styles.wrapper}>
-        <h1 className="pageHeading">Our Projects</h1>
+        <motion.h1
+          className="pageHeading"
+          initial={{ y: -10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+        >
+          Our Projects
+        </motion.h1>
         <YearSelector
           selectedYear={selectedYear}
           setSelectedYear={setSelectedYear}

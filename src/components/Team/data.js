@@ -3,6 +3,11 @@ import president from "../../images/team/nathan.jpg";
 import vicePresident from "../../images/team/daphne.jpg";
 import softwareColead1 from "../../images/team/allan.png";
 import softwareColead2 from "../../images/team/sano.jpg";
+import adminManager from "../../images/team/dominique.jpeg";
+import eventsLead from "../../images/team/zami.png";
+import fSLead from "../../images/team/mohique.jpg";
+import marketingColead1 from "../../images/team/charlotte.jpeg";
+import generic from "../../images/team/generic.png";
 
 const data = {
   Executive: {
@@ -32,6 +37,16 @@ const data = {
         role: "Software Colead",
         img: softwareColead2,
       },
+      {
+        name: "Ray Gu",
+        role: "Mechanical Lead",
+        img: generic,
+      },
+      {
+        name: "Aayush Surnamc",
+        role: "Electrical Lead",
+        img: generic,
+      },
     ],
     // Mechanical: [],
     // Electrical: [],
@@ -39,20 +54,40 @@ const data = {
   },
 
   Admin: {
-    "Finance & Sponsorship": [
+    Admin: [
       {
-        name: "Timothy Jing",
-        role: "Art and Design Director",
-        img: photo,
+        name: "Dominique Djaidiguna",
+        role: "Administration Manager",
+        img: adminManager,
+      },
+      {
+        name: "Zami Lee",
+        role: "Events Lead",
+        img: eventsLead,
+      },
+      {
+        name: "Mohique Gajdhar",
+        role: "Finance and Sponsorship Lead",
+        img: fSLead,
+      },
+      {
+        name: "Charlotte Chu",
+        role: "Marketing Colead",
+        img: marketingColead1,
+      },
+      {
+        name: "Cicy Zhou",
+        role: "Marketing Colead",
+        img: generic,
+      },
+      {
+        name: "Jamie Mo",
+        role: "Media Lead",
+        img: generic,
       },
     ],
-    Marketing: [
-      {
-        name: "Timothy Jing",
-        role: "Art and Design Director",
-        img: photo,
-      },
-    ],
+    // "Finance & Sponsorship": [],
+    // Marketing: [],
   },
 
   "Art and Design": {
