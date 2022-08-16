@@ -1,6 +1,7 @@
 import React from "react";
 import * as styles from "./styles/team.module.scss";
 import { motion } from "framer-motion";
+import * as Avatar from "@radix-ui/react-avatar";
 
 const PhotoDisplay = ({ selected, data }) => {
   let display = [];
@@ -29,7 +30,12 @@ const PhotoDisplay = ({ selected, data }) => {
             key={person.name}
             className={styles.headshotWrapper}
           >
-            <img src={person.img} className={styles.headshot} />
+            <Avatar.Root>
+              <Avatar.Image src={person.img} className={styles.headshot} />
+              <Avatar.Fallback>
+                <div className={styles.skeletonHeadshot} />
+              </Avatar.Fallback>
+            </Avatar.Root>
             <div className={styles.headshotDescriptor}>
               <h2 className={styles.memberName}>{person.name}</h2>
               <h3 className={styles.role}>{person.role}</h3>
