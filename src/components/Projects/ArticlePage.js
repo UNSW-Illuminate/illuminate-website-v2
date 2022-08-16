@@ -22,12 +22,14 @@ const ArticlePage = ({ data }) => {
     <Template currentPage="projects">
       <title>{article.title} | UNSW Illuminate</title>
       <div className={wrapper}>
+        <motion.h1 className="pageHeading">Our Projects</motion.h1>
         <LayoutGroup id="projectPageYearSelector">
           <YearSelector
             selectedYear={article.creationDate.substring(0, 4)}
             setSelectedYear={(year) =>
               navigate("/projects", { state: { year } })
             }
+            isArticle={true}
           />
         </LayoutGroup>
         {article && (

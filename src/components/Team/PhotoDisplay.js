@@ -1,5 +1,6 @@
 import React from "react";
 import * as styles from "./styles/team.module.scss";
+import { motion } from "framer-motion";
 
 const PhotoDisplay = ({ selected, data }) => {
   let display = [];
@@ -22,7 +23,11 @@ const PhotoDisplay = ({ selected, data }) => {
     <div className={styles.teamPhotoContainer}>
       {display.map((person, i) => {
         return (
-          <div key={person.memberName} className={styles.headshotWrapper}>
+          <div
+            layout
+            key={person.memberName}
+            className={styles.headshotWrapper}
+          >
             <img src={person.img} className={styles.headshot} />
             <div className={styles.headshotDescriptor}>
               <h2 className={styles.memberName}>{person.name}</h2>

@@ -3,6 +3,8 @@ import president from "../../images/team/nathan.jpg";
 import vicePresident from "../../images/team/daphne.jpg";
 import softwareColead1 from "../../images/team/allan.png";
 import softwareColead2 from "../../images/team/sano.jpg";
+import electricalLead from "../../images/team/aayush.jpeg";
+
 import adminManager from "../../images/team/dominique.jpeg";
 import eventsLead from "../../images/team/zami.png";
 import fSLead from "../../images/team/mohique.jpeg";
@@ -28,6 +30,11 @@ const data = {
   Technical: {
     Technical: [
       {
+        name: "Aayush Surnamc",
+        role: "Electrical Lead",
+        img: electricalLead,
+      },
+      {
         name: "Allan Goodman",
         role: "Software Colead",
         img: softwareColead1,
@@ -40,11 +47,6 @@ const data = {
       {
         name: "Ray Gu",
         role: "Mechanical Lead",
-        img: generic,
-      },
-      {
-        name: "Aayush Surnamc",
-        role: "Electrical Lead",
         img: generic,
       },
     ],
