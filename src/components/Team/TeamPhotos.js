@@ -4,6 +4,7 @@ import PhotoDisplay from "./PhotoDisplay";
 import data from "./data";
 import "../generalStyles.scss";
 import * as styles from "./styles/team.module.scss";
+import { motion } from "framer-motion";
 
 const TeamPhotos = () => {
   const [selected, setSelected] = React.useState("Executive");
@@ -19,8 +20,18 @@ const TeamPhotos = () => {
 
   return (
     <div className={styles.wrapper}>
-      <h1 className="pageHeading">Our Team</h1>
-      <div className={styles.container}>
+      <motion.h1
+        className="pageHeading"
+        initial={{ y: -10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+      >
+        Our Team
+      </motion.h1>
+      <motion.div
+        className={styles.container}
+        initial={{ y: -10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+      >
         <div className={styles.dropdownTabContainer}>
           {Object.keys(data).map((e, key) => {
             return (
@@ -38,7 +49,7 @@ const TeamPhotos = () => {
           })}
         </div>
         <PhotoDisplay selected={selected} data={data} />
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -23,9 +23,10 @@ const PhotoDisplay = ({ selected, data }) => {
     <div className={styles.teamPhotoContainer}>
       {display.map((person, i) => {
         return (
-          <div
-            layout
-            key={person.memberName}
+          <motion.div
+            initial={{ y: -5, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            key={person.name}
             className={styles.headshotWrapper}
           >
             <img src={person.img} className={styles.headshot} />
@@ -33,7 +34,7 @@ const PhotoDisplay = ({ selected, data }) => {
               <h2 className={styles.memberName}>{person.name}</h2>
               <h3 className={styles.role}>{person.role}</h3>
             </div>
-          </div>
+          </motion.div>
         );
       })}
     </div>
