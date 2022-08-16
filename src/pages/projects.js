@@ -29,6 +29,7 @@ const Projects = ({ data, location }) => {
 
   return (
     <Template currentPage="projects">
+      <title>Projects | UNSW Illuminate</title>
       <div className={styles.wrapper}>
         <motion.h1
           className="pageHeading"

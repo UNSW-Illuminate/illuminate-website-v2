@@ -20,6 +20,7 @@ const ArticlePage = ({ data }) => {
   });
   return (
     <Template currentPage="projects">
+      <title>{article.title} | UNSW Illuminate</title>
       <div className={wrapper}>
         <LayoutGroup id="projectPageYearSelector">
           <YearSelector
