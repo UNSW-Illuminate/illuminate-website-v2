@@ -1,32 +1,32 @@
 .footer-container {
+  margin-top: 100px;
   background-color: #0E0E0E;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #2FBBAA;
-  padding: 3%;
+  padding: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .footer-information {
   background-color: #0E0E0E;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 40px;
 }
 
 .footer-icons {
   background-color: #0E0E0E;
-  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .footer-illuminate {
   background-color: #0E0E0E;
   display: flex;
   justify-content: center;
-  height: 100px;
-  :hover {
-    background-color: #2FBBAA;
-  }
+  gap: 20px;
+  // :hover {
+  //   background-color: #2FBBAA;
+  // }
 }
 
 .footer-media {
@@ -36,21 +36,21 @@
   align-items: center;
   gap: 30px;
   
-  &>:link{
-    border-radius: 50%;
-    padding: 10px;
+  // &>:link{
+  //   border-radius: 50%;
+  //   padding: 10px;
 
-    :hover {
-      background-color: #2FBBAA;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      transition: all 200ms ease;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+  //   :hover {
+  //     background-color: #2FBBAA;
+  //     width: 36px;
+  //     height: 36px;
+  //     border-radius: 50%;
+  //     transition: all 200ms ease;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //   }
+  // }
 
   #arcLogo {
     width: 29px;
@@ -59,11 +59,13 @@
     transition: all 200ms ease;
   }
   
-  #arcLogo:hover {
-    background-color: #2FBBAA;
-    width: 38px;
-    height: 48px;
-  }
+
+}
+
+.footer-quick-links-wrapper {
+  display: flex;
+  gap: 10px;
+
 }
 
 .footer-quick-links {
@@ -71,15 +73,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 32px;
-  padding: 10px;
-  flex: 1;
+  gap: 15px;
 }
 
 .footer-quick-links-list {
   background-color: #0E0E0E;
   text-decoration: none;
-  flex: 1;
 
   li {
     background-color: #0E0E0E;
@@ -91,23 +90,18 @@
 
 .footer-copyright {
   background-color: #0E0E0E;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #2FBBAA;
   display: flex;
   justify-content: center;
   padding-top: 10px;
+  margin-bottom: 20px;
+  color: grey;
 }
 
 .icon-dimension {
   width: 36px;
   height: 36px;
   // background-color: #0E0E0E;
-  :hover {
-    background-color: #2FBBAA;
-    width: 48px;
-    height: 48px;
-  }
+
   
 }
 
@@ -116,8 +110,8 @@
 // }
 
 #illuminateLogo {
-  width: 78px;
-  height: 78px;
+  width: 50px;
+  height: 50px;
   background-color: #0E0E0E;
 }
 

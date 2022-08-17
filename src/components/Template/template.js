@@ -1,12 +1,11 @@
-import React from "react";
-import Navbar from "../Home/Navbar";
+import React, { useRef } from "react";
 import Footer from "../Home/Footer";
-import SocialLinks from "../Home/SocialLinks";
+import Navbar from "../Home/Navbar";
 
-const Template = ({ children }) => {
+const Template = ({ children, currentPage }) => {
   return (
     <>
-      <Navbar />
+      <Navbar currentPage={currentPage} />
       {children}
       <Footer />
     </>
