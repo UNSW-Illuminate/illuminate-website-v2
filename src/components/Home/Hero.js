@@ -20,7 +20,7 @@ const Hero = () => {
         Art meets technology
       </SlideIn>
       <SlideIn delay={0.9}>
-        <Link to="collageWrapper" smooth={true}>
+        <Link to="latestProjects" smooth={true}>
           <button className={styles.projectsBtn}>
             See our Projects!
             <div>See our Projects!</div>

@@ -24,7 +24,7 @@ const Collage = () => {
   };
 
   return (
-    <div id="collageWrapper" className={styles.collageWrapper} ref={collage}>
+    <div id="latestProjects" className={styles.collageWrapper} ref={collage}>
       {/* <div className="collageHeading">
         We’re a student society that applies hands-on skills on large scale
         multidisciplinary light projects!
