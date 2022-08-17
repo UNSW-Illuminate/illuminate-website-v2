@@ -3,7 +3,6 @@
   "project": {
     "name": "Illuminate Blog",
     "basePath": "/studio"
-
   },
   "api": {
     "projectId": "xx4hw8hu",
@@ -13,7 +12,8 @@
     "@sanity/base",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "vercel-deploy"
   ],
   "env": {
     "development": {
