@@ -30,7 +30,7 @@ const data = {
   Technical: {
     Technical: [
       {
-        name: "Aayush Surnamc",
+        name: "Aayush Rajouria",
         role: "Electrical Lead",
         img: electricalLead,
       },
