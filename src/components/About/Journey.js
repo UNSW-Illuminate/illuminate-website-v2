@@ -19,8 +19,8 @@ const Journey = () => {
       <div className={styles.timelineCont}>
         <div className={styles.timelineGrid}>
           <div className={styles.body} id={styles.journey1}>
-            UNSW Illuminate began in 2015 and was originally a project under
-            UNSW's CREATE Student Society.
+            UNSW Illuminate began in 2015 as a project under UNSW's CREATE
+            Student Society.
           </div>
           {isDesktop ? (
             <img src={timeline} className="timelineImg" id={styles.timeline} />

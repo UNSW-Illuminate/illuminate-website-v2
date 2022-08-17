@@ -1,10 +1,9 @@
 import React from "react";
-import AliceCarousel from "react-alice-carousel";
 import synergy from "../../images/projects/synergy.jpg";
 import cube from "../../images/projects/cube.jpg";
-import crystallise from "../../images/projects/crystallise.jpg";
+import crystallise from "../../images/projects/crystallise.jpeg";
 import laneway from "../../images/projects/laneway.jpg";
-import pancake from "../../images/projects/pancake.jpg";
+import pancake from "../../images/projects/pancake.jpeg";
 import heartstrings from "../../images/projects/heartstrings.jpeg";
 import "react-alice-carousel/lib/alice-carousel.css";
 import * as styles from "./styles/MobileList.module.scss";

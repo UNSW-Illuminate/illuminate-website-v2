@@ -3,8 +3,6 @@ import Template from "../components/Template/template";
 import * as styles from "../components/Projects/styles/projects.module.scss";
 import YearSelector from "../components/Projects/YearSelector";
 import ArticleCard from "../components/Projects/ArticleCard";
-import sanityClient from "../sanityClient.js";
-import ArticlePage from "../components/Projects/ArticlePage";
 import { graphql } from "gatsby";
 import { motion } from "framer-motion";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import pancake from "../../images/projects/pancake.jpg";
 import * as styles from "./styles/articleCard.module.scss";
 import { BsStack } from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
