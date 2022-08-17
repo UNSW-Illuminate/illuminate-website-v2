@@ -9,7 +9,7 @@
   "scripts": {
     "start": "sanity start",
     "test": "sanity check",
-    "build": "sanity build public"
+    "build": "sanity build public -y"
   },
   "keywords": [
     "sanity"
@@ -29,9 +29,7 @@
     "sanity-plugin-vercel-deploy": "^2.1.6",
     "styled-components": "^5.2.0"
   },
-  "devDependencies": {
-    "@sanity/cli": "^2.30.6"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git@github.com:UNSW-Illuminate/illuminate-website-v2.git"
