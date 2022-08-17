@@ -33,12 +33,9 @@
     "react-alice-carousel": "^2.6.4",
     "react-dom": "^17.0.1",
     "react-icons": "^4.4.0",
-<<<<<<< HEAD
-=======
     "react-image-gallery": "^1.2.9",
     "react-scroll": "^1.8.7",
     "react-toastify": "^9.0.8",
->>>>>>> main
     "sass": "^1.49.9"
   },
   "engines": {
