@@ -4,12 +4,12 @@ const navigations = [
     link: "/projects",
   },
   {
-    title: "Team",
-    link: "/team",
-  },
-  {
     title: "About",
     link: "/about",
+  },
+  {
+    title: "Team",
+    link: "/team",
   },
   {
     title: "Contact",

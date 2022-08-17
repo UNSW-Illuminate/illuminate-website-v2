@@ -35,7 +35,7 @@ const values = [
     title: "Practical experience",
     content: `We aim to empower students to apply hands-on skills on large
     scale, professional, and multidisciplinary projects and to
-    foster deep interactions designers and engineers.`,
+    foster deep interactions between designers and engineers.`,
   },
   {
     title: "Teamwork",
