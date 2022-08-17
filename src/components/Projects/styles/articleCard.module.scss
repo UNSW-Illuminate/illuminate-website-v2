@@ -5,19 +5,22 @@
   align-items: center;
   gap: 50px;
   justify-content: center;
-  &:hover {
-    &>img {
-      width: 425px;
-      height: 305px;
-    }
-    cursor: pointer;
-  }
-  
+
+
   @media (max-width: 500px) {
     gap: 15px;
     flex-direction: column;
   }
   
+  @media (min-width: 800px) {
+    &:hover {
+      &>img {
+        width: 425px;
+        height: 305px;
+      }
+      cursor: pointer;
+    }
+  }
 }
 
 .thumbnail {
