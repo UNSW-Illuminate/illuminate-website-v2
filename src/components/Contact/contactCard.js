@@ -16,6 +16,7 @@ const ContactCard = () => {
   const [message, setMessage] = React.useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+
     fetch("https://formcarry.com/s/ott2r2kWXHeH", {
       method: "POST",
       headers: {
@@ -40,14 +41,6 @@ const ContactCard = () => {
       }
     });
   };
-
-  // if (state.submitted) {
-  //   toast.success(
-  //     "Your message has been sent! We'll get back to you as soon as possible.",
-  //     { autoClose: 5000 }
-  //   );
-  //   console.log("firshellt");
-  // }
 
   return (
     <>
