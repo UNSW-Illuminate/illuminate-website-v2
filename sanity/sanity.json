@@ -1,7 +1,9 @@
 {
   "root": true,
   "project": {
-    "name": "Illuminate Blog"
+    "name": "Illuminate Blog",
+    "basePath": "/studio"
+
   },
   "api": {
     "projectId": "xx4hw8hu",
