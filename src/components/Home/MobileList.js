@@ -22,7 +22,7 @@ const MobileList = () => {
     },
     { img: synergy, link: "projects/synergy", name: "Synergy" },
     { img: crystallise, link: "projects/crystallise", name: "Crystallise" },
-    { img: cube, link: "projects/cube", name: "Mondrian Cube" },
+    { img: cube, link: "projects/mondrian-cube", name: "Mondrian Cube" },
   ];
 
   return (
