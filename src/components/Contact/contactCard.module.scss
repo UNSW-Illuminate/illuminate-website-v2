@@ -3,6 +3,8 @@
     max-width: 1250px;
     margin: auto auto;
     gap: 80px;
+    min-height: 100vh;
+
     @media (max-width: 800px) {
         padding: 90px 50px;    
     }
