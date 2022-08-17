@@ -1,5 +1,0 @@
-{
-  "rewrites": [
-    {"source": "/admin/:match*", "destination": "https://illuminate-sanity.vercel.app/desk/:match*"}
-  ]
-}
