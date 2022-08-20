@@ -22,6 +22,13 @@ const EventCarousel = () => {
       clearInterval(id);
     };
   });
+
+  const handleClick = (event) => {
+    if (event.target.id && nowDisplaying != event.target.id) {
+      setNowDisplaying(event.target.id);
+      setProgress(0);
+    }
+  };
   return (
     <div className="container">
       <div className="displayContainer">
@@ -49,30 +56,31 @@ const EventCarousel = () => {
       </div>
       <div className="eventListContainer">
         {events.map((e, key) => (
-          <div>
-            <div className="eventCard" key={key}>
-              <img
-                className="eventImage"
-                src={require(`../../images/events/${e.image}.jpg`).default}
-                id={key}
-              />
-              <div className="eventContent">{e.name}</div>
-              {e.name == events[nowDisplaying].name && (
-                <ProgressBar
-                  completed={progress}
-                  height="180px"
-                  width="300px"
-                  borderRadius="20px"
-                  isLabelVisible={false}
-                  bgColor="rgba(255, 255, 255, 0.08)"
-                  //bgColor="red"
-                  maxCompleted={100}
-                  className="progressBar"
-                  baseBgColor="rgba(18, 18, 18, 0.9)"
-                  transitionDuration="5"
-                />
-              )}
+          <div className="eventCard" key={key} id={key} onClick={handleClick}>
+            <img
+              id={key}
+              className="eventImage"
+              src={require(`../../images/events/${e.image}.jpg`).default}
+            />
+            <div className="eventContent" id={key}>
+              {e.name}
             </div>
+            {e.name == events[nowDisplaying].name && (
+              <ProgressBar
+                id={key}
+                completed={progress}
+                height="180px"
+                width="350px"
+                borderRadius="20px"
+                isLabelVisible={false}
+                bgColor="rgba(255, 255, 255, 0.08)"
+                //bgColor="red"
+                maxCompleted={100}
+                className="progressBar"
+                baseBgColor="rgba(18, 18, 18, 0.9)"
+                transitionDuration="5"
+              />
+            )}
           </div>
         ))}
       </div>
