@@ -2,36 +2,17 @@ import artDesignLead from "../../images/team/natalie.jpg";
 import teamManager from "../../images/team/allan.png";
 import mechanicalLead from "../../images/team/daniel.jpg";
 import electricalLead from "../../images/team/aayush.jpeg";
+import softwareLead from "../../images/team/mitchell.png";
 
 import generic from "../../images/team/generic.png";
 
 const data = {
-  Executive: {
-    Executive: [
-      {
-        name: "Allan Goodman",
-        role: "Team Manager",
-        img: teamManager,
-      },
-    ],
-  },
-
   Technical: {
     Technical: [
       {
-        name: "Ray Gu",
-        role: "Technical Manager",
-        img: generic,
-      },
-      {
-        name: "Mitchell Wallace",
-        role: "Software Lead",
-        img: generic,
-      },
-      {
-        name: "Tejit Pradhan",
-        role: "Web Lead",
-        img: generic,
+        name: "Aayush Rajouria",
+        role: "Electrical Lead",
+        img: electricalLead,
       },
       {
         name: "Daniel Cicek",
@@ -39,9 +20,19 @@ const data = {
         img: mechanicalLead,
       },
       {
-        name: "Aayush Rajouria",
-        role: "Electrical Lead",
-        img: electricalLead,
+        name: "Mitchell Wallace",
+        role: "Software Lead",
+        img: softwareLead,
+      },
+      {
+        name: "Ray Gu",
+        role: "Technical Manager",
+        img: generic,
+      },
+      {
+        name: "Tejit Pradhan",
+        role: "Web Lead",
+        img: generic,
       },
     ],
   },
@@ -52,6 +43,16 @@ const data = {
         name: "Natalie Chen",
         role: "Art and Design Lead",
         img: artDesignLead,
+      },
+    ],
+  },
+
+  Executive: {
+    Executive: [
+      {
+        name: "Allan Goodman",
+        role: "Team Manager",
+        img: teamManager,
       },
     ],
   },
