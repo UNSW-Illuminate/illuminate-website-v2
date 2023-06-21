@@ -7,6 +7,7 @@ import crystallise from "../../images/projects/crystallise.jpeg";
 import laneway from "../../images/projects/laneway.jpg";
 import pancake from "../../images/projects/pancake.jpeg";
 import heartstrings from "../../images/projects/heartstrings.jpeg";
+import paralanguage from "../../images/projects/paralanguage.jpg";
 import { navigate } from "gatsby";
 
 const Collage = () => {
@@ -139,6 +140,22 @@ const Collage = () => {
             className={`${styles.gridItem6} ${styles.collageItem}`}
           />
           <div className={styles.projectTitle}>Mondrian Cube</div>
+        </div>
+        <div
+          className={`${styles.collageItem} ${styles.gridItem7}`}
+          onClick={() => navigate("/projects/paralanguage")}
+        >
+          <img
+            src={paralanguage}
+            alt=""
+            className={`${styles.collageItemGlow} ${styles.collageItem}`}
+          />
+          <img
+            src={paralanguage}
+            alt=""
+            className={`${styles.gridItem1} ${styles.collageItem}`}
+          />
+          <div className={styles.projectTitle}>Paralanguage</div>
         </div>
       </div>
     </div>

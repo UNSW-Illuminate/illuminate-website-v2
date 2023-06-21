@@ -10,53 +10,51 @@
 .collage {
   display: grid;
   position: relative;
-  column-gap: clamp(50px, 20%, 200px);
-  row-gap: clamp(50px, 20%, 200px);
+  column-gap: clamp(50px, 20%, 100px);
+  row-gap: clamp(50px, 20%, 80px);
   grid-template-columns: repeat(11, 1fr);
   width: 100%;
   margin: auto auto;
   position: relative;
-
 }
 
 .gridItem1 {
-  grid-column: 1 / span 3;
+  grid-column: 3 / span 3;
   position: relative;
-
 }
 
 
 .gridItem2 {
-  grid-column: 4 / span 3;
+  grid-column: 6 / span 3;
   position: relative;
-
 }
 
 
 .gridItem3 {
-  grid-column: 7 / span 3;
+  grid-column: 1 / span 3;
   position: relative;
-
 }
 
 
 .gridItem4 {
-  grid-column: 2 / span 3;
+  grid-column: 4 / span 3;
   position: relative;
-
 }
 
 .gridItem5 {
-  grid-column: 5 / span 3;
+  grid-column: 7 / span 3;
   position: relative;
-
 }
 
 
 .gridItem6 {
-  grid-column: 8 / span 3;
+  grid-column: 2 / span 3;
   position: relative;
+}
 
+.gridItem7 {
+  grid-column: 5 / span 3;
+  position: relative;
 }
 
 
@@ -136,7 +134,4 @@
       opacity: 100;
     }
   }
-  
-
-  
 }
