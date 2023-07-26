@@ -5,8 +5,8 @@ import { intervalToDuration, format } from "date-fns";
 
 const EventDisplay = () => {
   const events = [1, 2, 3, 4, 5];
-  // e.g. event occurs at 12:00pm on 21/07/2023, which is
-  let eventStartTime = new Date(2023, 6, 21, 12, 0, 0);
+  // e.g. event occurs at 12:00pm on 30/09/2023, which is
+  let eventStartTime = new Date(2023, 8, 30, 12, 0, 0);
 
   const [timeToEvent, setTimeToEvent] = React.useState(
     timeLeftToEvent(eventStartTime)
@@ -52,10 +52,21 @@ const timeLeftToEvent = (eventStartTime) => {
 };
 
 const formatCountdown = (timeLeft) => {
-  const padZero = (num) => num.toString().padStart(2, "0");
-  const formatted = [timeLeft.hours, timeLeft.minutes, timeLeft.seconds]
-    .map(padZero)
-    .join(":");
+  let formatted = "";
+
+  if (timeLeft.months) {
+    formatted += `${timeLeft.months} months `;
+  }
+
+  if (timeLeft.days) {
+    formatted += `${timeLeft.days} days `;
+  }
+
+  if (timeLeft.hours) {
+    formatted += `${timeLeft.hours} hours `;
+  }
+
+  formatted += `${timeLeft.minutes} mins left`;
 
   return formatted;
 };
