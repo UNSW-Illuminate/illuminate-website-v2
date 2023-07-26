@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import * as React from "react";
 import "./styles/Navbar.scss";
-import navigations from "./nagivations";
+import navigations from "./navigations";
 import logo from "../../images/logo.png";
 import { motion } from "framer-motion";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
