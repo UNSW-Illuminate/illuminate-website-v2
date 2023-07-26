@@ -20,6 +20,7 @@
     "@radix-ui/react-dropdown-menu": "^1.0.0",
     "@radix-ui/react-select": "^1.0.0",
     "@sanity/client": "^3.3.2",
+    "date-fns": "^2.30.0",
     "framer-motion": "^6.2.9",
     "gatsby": "^4.9.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
