@@ -3,10 +3,10 @@ const navigations = [
     title: "Projects",
     link: "/projects",
   },
-  {
-    title: "Events",
-    link: "/events",
-  },
+  // {
+  //   title: "Events",
+  //   link: "/events",
+  // },
   {
     title: "About",
     link: "/about",
