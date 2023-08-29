@@ -1,0 +1,92 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+  }
+  
+  
+.aboutContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.titleContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.5rem;
+	margin: 0px 0 30px 0;
+
+	@media (max-width: 1500px) {
+		/* Laptop */
+		font-size: 1.5rem;
+	}  
+}
+
+.valuesContainer {
+	display: flex;
+	flex-direction: row;
+	padding: 5vw;
+	gap: 5vw;
+
+	@media (max-width: 500px) {
+		gap: 30px;
+	}
+}
+
+.valueBox {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+	border-style: solid;
+	border-radius: 25px;
+	border-color: #27BB97;
+	padding: 2%;
+	width: 25vw;
+	height: 65vh;
+	gap: 5vh;
+}
+
+.valueBox:hover {
+	box-shadow: 0 0 10px #27BB97;
+}
+
+.textBox {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	align-content: center;
+  justify-content: center;
+	flex-grow: 3;
+}
+
+.animationBox {
+	z-index: -1;
+	margin-top: -10%;
+	margin-bottom: -20%;
+	flex-grow: 1;
+}
+
+.valueHeading {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	color: #27BB97;
+	font-weight: bold;
+	font-size: 20pt;
+}
+  
+.valueBody {
+	display: flex;
+	font-size: 14pt;
+	line-height: 1.9;
+	flex-grow: 2;
+	height: 100%;
+}

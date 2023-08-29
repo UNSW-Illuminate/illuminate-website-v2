@@ -1,4 +1,5 @@
 import * as React from "react";
+import About from "../components/Home/About";
 import Collage from "../components/Home/Collage";
 import Hero from "../components/Home/Hero";
 import MobileList from "../components/Home/MobileList";
@@ -14,6 +15,7 @@ const IndexPage = () => {
         {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
       </head>
       <Hero />
+      <About />
       {isLaptop ? <Collage /> : <MobileList />}
     </Template>
   );
