@@ -20,7 +20,7 @@ const data = {
         img: mechanicalLead,
       },
       {
-        name: "Mitchell Wallace",
+        name: "Nathan Nguyen",
         role: "Software Lead",
         img: softwareLead,
       },
