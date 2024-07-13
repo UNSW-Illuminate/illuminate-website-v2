@@ -15,7 +15,8 @@ const IndexPage = () => {
         {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
       </head>
       <Hero />
-      <About />
+      {/* Commenting this out until fixed */}
+      {/* <About /> */}
       {isLaptop ? <Collage /> : <MobileList />}
     </Template>
   );
