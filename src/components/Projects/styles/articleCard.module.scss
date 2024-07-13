@@ -18,7 +18,9 @@
         width: 425px;
         height: 305px;
       }
-      cursor: pointer;
+      & {
+        cursor: pointer;
+      }
     }
   }
 }
