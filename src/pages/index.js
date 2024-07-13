@@ -24,5 +24,5 @@ const IndexPage = () => {
 export default IndexPage;
 
 export function Head() {
-  return <title>Hello World</title>;
+  return <title>UNSW Illuminate</title>;
 }
