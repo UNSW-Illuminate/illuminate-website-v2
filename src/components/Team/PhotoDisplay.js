@@ -2,27 +2,33 @@ import React from "react";
 import * as styles from "./styles/team.module.scss";
 import { motion } from "framer-motion";
 import * as Avatar from "@radix-ui/react-avatar";
+import people from "./people_data";
 
-const PhotoDisplay = ({ selected, data }) => {
-  let display = [];
-  const findTeam = (subcom) => {
-    for (let team in data) {
-      if (subcom in data[team]) {
-        return team;
-      }
-    }
-  };
+const PhotoDisplay = () => {
+  const teamLeads = people.team;
+  const technicalLeads = people.technical;
+  return (
+    <div className={styles.teamWrapper}>
+      <motion.div
+        className={styles.container}
+        initial={{ y: -10, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+      >
+        <div className={styles.teamContainer}>
+          <div className={styles.heading}>Team Leads</div>
+          {display(teamLeads)}
+          <div className={styles.heading}>Technical Leads</div>
+          {display(technicalLeads)}
+        </div>
+      </motion.div>
+    </div>
+  );
+};
 
-  const team = findTeam(selected);
-  if (selected in data) {
-    display = Object.values(data[team]).flat();
-  } else {
-    display = data[team][selected];
-  }
-
+function display(teamArray) {
   return (
     <div className={styles.teamPhotoContainer}>
-      {display.map((person, i) => {
+      {teamArray.map((person) => {
         return (
           <motion.div
             initial={{ y: -5, opacity: 0 }}
@@ -45,6 +51,6 @@ const PhotoDisplay = ({ selected, data }) => {
       })}
     </div>
   );
-};
+}
 
 export default PhotoDisplay;
