@@ -14,15 +14,14 @@
 
 // styles for banner
 .bannerWrapper {
-  padding-top: 100px;
-  max-width: 1400px;
+  padding-top: 80px;
   flex-direction: column;
   align-items: center;
   margin: auto auto;
 }
 
 .banner {
-	height: 200px;
+	height: 250px;
 	width: 100%;
 	background-size: 'cover';
 }
@@ -44,7 +43,10 @@
 }
 
 .teamContainer {
-	flex-direction: column;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading {
@@ -63,6 +65,7 @@
   row-gap: 30px;
   justify-content: center;
   align-items: center;
+  max-width: 1400px;
   
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
@@ -134,14 +137,18 @@
 	display: grid;
 	flex-direction: row;
 	grid-template-columns: 1fr 1fr;
-  row-gap: 50px;
+  row-gap: 30px;
+  column-gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
   justify-items: center;
-  width: 700px;
+  justify-content: space-around;
 }
 
 .departmentBox {
   position: relative;
-	width: 300px;
+	width: 550px;
 	height: 300px;
 	display: flex;
 	justify-content: center;
@@ -183,7 +190,7 @@
 
 .departmentHeadingHover {
   display: flex;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   align-items: flex-start;
   justify-content: flex-start;
