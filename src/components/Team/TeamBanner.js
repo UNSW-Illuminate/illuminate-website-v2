@@ -11,7 +11,6 @@ const TeamBanner = () => {
         style={{
           backgroundImage: `url(${teamBannerImage})`,
           backgroundPositionY: -400,
-          backgroundPositionX: -200,
         }}
         className={styles.banner}
       >
