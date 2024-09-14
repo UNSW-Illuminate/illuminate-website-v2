@@ -8,10 +8,10 @@ const TeamBanner = () => {
   return (
     <div className={styles.bannerWrapper}>
       <motion.div
-        style={{
-          backgroundImage: `url(${teamBannerImage})`,
-          backgroundPositionY: -400,
-        }}
+        // style={{
+        //   backgroundImage: `url(${teamBannerImage})`,
+        //   backgroundPositionY: -400,
+        // }}
         className={styles.banner}
       >
         <div className={styles.title}>Our Team</div>
