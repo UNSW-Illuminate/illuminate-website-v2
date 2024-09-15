@@ -12,7 +12,7 @@ const Team = () => (
     <div className={styles.teamWrapper}>
       <TeamBanner />
       <PhotoDisplay />
-      <Departments />
+      {/* <Departments /> */}
     </div>
   </Template>
 );
