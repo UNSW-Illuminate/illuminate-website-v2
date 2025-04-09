@@ -1,20 +1,34 @@
 
-**Install dependencies**
+**Setup**
+
+In main project folder: 
 ```shell
 npm install 
 ```
-
-**Start developing.**
-
+or if it's been a while since packages were last updated (09/04/2025) instead run:
+```shell
+npm update 
+```
+then to start development server:
 ```shell
 npm run develop
 ```
-
-**Open the code and start customizing!**
-
 Your site is now running at http://localhost:8000!
 
-Edit `src/pages/index.js` to see your site update in real-time!
+repeat these steps from the sanity subfolder to start the sanity instance
+should run at http://localhost:3333 and ask for authentication to sanity.io so you may need to request access.
+
+Changes to the website code will refresh on localhost automatically.
+To see sanity content changes reflected on the localhost site, you'll need to cancel and rerun:
+```shell
+npm run develop
+```
+Until gatbsy watchmode is added?
+
+
+To Delpoy: 
+...
+
 
 
    
