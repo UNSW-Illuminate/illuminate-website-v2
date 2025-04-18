@@ -98,13 +98,15 @@
   border-radius: 0 0 30px 30px;
 }
 
-.subTeamName {
+.subTeamHeading {
+  margin-top: 60px;
   text-align: center;
 }
 
 // styles for photo display
 .teamPhotoContainer {
   margin-top: 15px;
+  margin-bottom: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
@@ -202,3 +204,52 @@
   justify-content: space-between;
   cursor: pointer;
 }
+
+.ourTeamBanner {
+  width: 99vw;
+  height: 25vh;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.DepDisplayCard {
+  background-color: red;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  aspect-ratio: 1 /1;
+  box-sizing: border-box;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+  overflow: hidden;
+}
+
+.DepDescription {
+  margin: 10px;
+  line-height: 1.5;
+}
+
+.DepDisplayContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 50px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+@media (max-width: 700px) {
+  .DepDisplayContainer {
+    grid-template-columns: 1fr;
+  }
+}
+

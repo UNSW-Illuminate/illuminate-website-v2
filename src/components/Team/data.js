@@ -1,61 +1,80 @@
-import artDesignLead from "../../images/team/natalie.jpg";
-import teamManager from "../../images/team/allan.png";
-import mechanicalLead from "../../images/team/daniel.jpg";
-import electricalLead from "../../images/team/aayush.jpeg";
-import softwareLead from "../../images/team/mitchell.png";
+// import artDesignLead from "../../images/team/natalie.jpg";
+// import teamManager from "../../images/team/allan.png";
+// import mechanicalLead from "../../images/team/daniel.jpg";
+// import electricalLead from "../../images/team/aayush.jpeg";
+// import softwareLead from "../../images/team/mitchell.png";
 
 import generic from "../../images/team/generic.png";
 
-const data = {
-  Technical: {
+import designBackground from "../../images/team/DesignBackground.jpg";
+import electricalBackground from "../../images/team/ElectricalBackground.jpg";
+import mechanicalBackground from "../../images/team/MechanicalBackground.jpg";
+import softwareBackground from "../../images/team/SoftwareBackground.jpg";
+
+export const teamData = {
+
     Technical: [
       {
-        name: "Aayush Rajouria",
+        name: "Elsa Doan",
         role: "Electrical Lead",
-        img: electricalLead,
-      },
-      {
-        name: "Daniel Cicek",
-        role: "Mechanical Lead",
-        img: mechanicalLead,
-      },
-      {
-        name: "Nathan Nguyen",
-        role: "Software Lead",
-        img: softwareLead,
-      },
-      {
-        name: "Ray Gu",
-        role: "Technical Manager",
         img: generic,
       },
       {
-        name: "Tejit Pradhan",
+        name: "Yangyue Jiang",
+        role: "Mechanical Lead",
+        img: generic,
+      },
+      {
+        name: "Sheen Sandhu",
+        role: "Software Lead",
+        img: generic,
+      },
+      {
+        name: "Liam Smith",
         role: "Web Lead",
         img: generic,
       },
     ],
-  },
 
-  "Art and Design": {
-    "Art and Design": [
+    Design: [
       {
-        name: "Natalie Chen",
+        name: "Stella Fan",
         role: "Art and Design Lead",
-        img: artDesignLead,
+        img: generic,
       },
     ],
-  },
 
-  Executive: {
     Executive: [
       {
-        name: "Allan Goodman",
-        role: "Team Manager",
-        img: teamManager,
+        name: "Nathan Nguyen",
+        role: "Project Lead",
+        img: generic,
       },
     ],
-  },
+
 };
 
-export default data;
+export const depData ={
+  departments: [
+    {
+      depName: "Software",
+      depDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      img: softwareBackground
+    },
+    {
+      depName: "Mechanical",
+      depDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      img: mechanicalBackground
+    },
+    {
+      depName: "Electrical",
+      depDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      img: electricalBackground
+    },
+    {
+      depName: "Design & Biomedical",
+      depDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      img: designBackground
+    },
+  ]
+};

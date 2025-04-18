@@ -24,22 +24,26 @@ const PhotoDisplay = ({ selected, data }) => {
     <div className={styles.teamPhotoContainer}>
       {display.map((person, i) => {
         return (
+
           <motion.div
             initial={{ y: -5, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             key={person.name}
             className={styles.headshotWrapper}
           >
+
             <Avatar.Root>
               <Avatar.Image src={person.img} className={styles.headshot} />
               <Avatar.Fallback>
                 <div className={styles.skeletonHeadshot} />
               </Avatar.Fallback>
             </Avatar.Root>
+            
             <div className={styles.headshotDescriptor}>
               <h2 className={styles.memberName}>{person.name}</h2>
               <h3 className={styles.role}>{person.role}</h3>
             </div>
+
           </motion.div>
         );
       })}
