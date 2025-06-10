@@ -4,3 +4,5 @@ public
 .env.development
 # React Component Preview
 previewConfig.json
+
+sanity/config/.checksums

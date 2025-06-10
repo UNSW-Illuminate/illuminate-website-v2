@@ -38,12 +38,13 @@ const TeamPhotos = () => {
       </motion.h1>
 
       <motion.h2
-        className="pageHeading"
+        className=""
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
+
         <div className={styles.subTeamHeading}
-             style={{backgroundImage: `url()`}}>
+            style={{backgroundImage: `url()`}}>
           Team Leads
         </div>
       </motion.h2>
@@ -58,11 +59,11 @@ const TeamPhotos = () => {
 
 
       <motion.h2
-        className="pageHeading"
+        className=""
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
-        <div className={styles.subTeamHeading}>
+        <div className={`${styles.subTeamHeading} ${styles.technicalLeadsHeading}`}>
           Technical Leads
         </div>
       
@@ -80,7 +81,7 @@ const TeamPhotos = () => {
 
 
       <motion.h2
-        className="pageHeading"
+        className=""
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
