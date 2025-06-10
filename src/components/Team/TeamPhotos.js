@@ -38,7 +38,6 @@ const TeamPhotos = () => {
         >
           Team Leads
         </div>
-
         {/* Create team lead photo cards */}
         <div>
           {teamData?.Executive.map((person) => (
@@ -47,10 +46,9 @@ const TeamPhotos = () => {
         </div>
 
 
-        <div className={`${styles.subTeamHeading} ${styles.technicalLeadsHeading}`}>
+        <div className={`${styles.subTeamHeading} ${styles.SubHeadingTopMargin}`}>
           Technical Leads
         </div>
-
         {/* Create technical lead photo cards */}
         <div  
           className={styles.teamPhotoContainer}
@@ -63,8 +61,20 @@ const TeamPhotos = () => {
           ))}
         </div>
 
+
+        <div
+          className={`${styles.subTeamHeading} ${styles.  SubHeadingTopMargin}`}
+        >
+          Team Members
+        </div>
+        <div
+          className={`${styles.teamMemberList}`}>
+          Albert (Tri) Do • Alicia Ding • Andrew Ni • Anish Bajaj • Anoushdka Jai Shanker • Audrey Kao • Beatrice Chen • Guy Rein • Jasmine Aung • Mila Bockaroska • Nathanael Jason • Rishi Adhvaryu • Joshua Yee • Sam Trustrum • Samantha Kabidin • Tazin Saiyed • Ziyad Ashraf
+        </div>
+
+
         <div 
-          className={styles.subTeamHeading}>
+          className={`${styles.subTeamHeading} ${styles.SubHeadingTopMargin}`}>
           Our Departments
         </div>
 
