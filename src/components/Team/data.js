@@ -1,8 +1,9 @@
 // import artDesignLead from "../../images/team/natalie.jpg";
 // import teamManager from "../../images/team/allan.png";
 // import mechanicalLead from "../../images/team/daniel.jpg";
-// import electricalLead from "../../images/team/aayush.jpeg";
 // import softwareLead from "../../images/team/mitchell.png";
+import teamlead from "../../images/team/nathan.jpg";
+import electricalLead from "../../images/team/elsa.jpg";
 
 import generic from "../../images/team/generic.png";
 
@@ -17,7 +18,7 @@ export const teamData = {
       {
         name: "Elsa Doan",
         role: "Electrical Lead",
-        img: generic,
+        img: electricalLead,
       },
       {
         name: "Yangyue Jiang",
@@ -27,11 +28,6 @@ export const teamData = {
       {
         name: "Sheen Sandhu",
         role: "Software Lead",
-        img: generic,
-      },
-      {
-        name: "Liam Smith",
-        role: "Web Lead",
         img: generic,
       },
     ],
@@ -48,7 +44,7 @@ export const teamData = {
       {
         name: "Nathan Nguyen",
         role: "Project Lead",
-        img: generic,
+        img: teamlead,
       },
     ],
 
@@ -58,22 +54,22 @@ export const depData ={
   departments: [
     {
       depName: "Software",
-      depDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      depDescription: "We develop the logic that powers our systems — from control loops to user interfaces. Our team works across embedded systems, simulation, and real-time processing to make everything run smoothly.",
       img: softwareBackground
     },
     {
       depName: "Mechanical",
-      depDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      depDescription: "We design and build the physical systems behind our projects — everything from frames and linkages to actuators and custom parts. Whether it’s 3D printing or full assemblies, we turn ideas into something real.",
       img: mechanicalBackground
     },
     {
       depName: "Electrical",
-      depDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      depDescription: "This team handles the electronics that bring our systems to life. From circuit design to wiring and testing, we make sure everything has power, signal, and reliability.",
       img: electricalBackground
     },
     {
       depName: "Design & Biomedical",
-      depDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      depDescription: "This team bridges the gap between engineering and experience. Whether it's designing intuitive interfaces or exploring biomedical challenges, we focus on solutions that are both functional and thoughtful.",
       img: designBackground
     },
   ]

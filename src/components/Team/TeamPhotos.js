@@ -25,7 +25,8 @@ const TeamPhotos = () => {
         <div 
           className={`${styles.ourTeamBanner} pageHeading`}
           style={{
-            backgroundImage: `url(${teamBanner})`,
+             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${teamBanner})`,
+            // backgroundImage: `url(${teamBanner})`,
             backgroundPosition: `center center`,
             backgroundRepeat: `no-repeat`,
             }}

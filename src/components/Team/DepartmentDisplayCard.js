@@ -23,7 +23,7 @@ const DepartmentDisplayCard = ({department}) => {
             layout 
 
             style={{
-                backgroundImage: `url(${department.img})`,
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${department.img})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat'}}

@@ -14,80 +14,6 @@
   }
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  gap: 20px;
-}
-
-.dropdownTabContainer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  
-}
-
-
-styles for dropdown menu
-.tabContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-.tab {
-  padding: 15px 0px;
-  cursor: pointer;
-  width: 200px;
-  border-radius: 20px;
-  background-color: #222424;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-.tabSelected {
-  @extend .tab;
-  background-color: #3CA3AA;
-}
-
-.name {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.menu {
-  background-color: #222424;
-  border-radius: 25px;
-  position: absolute;
-  left: 0;
-}
-
-.item {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.itemSelectable {
-  @extend .item;
-  font-size: 25px;
-}
-
-.itemSelectable:hover {
-  background-color: #3CA3AA;
-}
-
-.itemLast {
-  @extend .itemSelectable;
-  border-radius: 0 0 30px 30px;
-}
-
 .subTeamHeading {
   text-align: center;
   font-weight: 600;
@@ -107,15 +33,18 @@ styles for dropdown menu
   margin-top: 60px;
 }
 
-// styles for photo display
 .teamPhotoContainer {
   margin-top: 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 30px;
   row-gap: 30px;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
   
-  @media (max-width: 900px) {
+  @media (max-width: 700px) {
     grid-template-columns: 1fr;
   }
 }
@@ -139,7 +68,6 @@ styles for dropdown menu
 .headshot {
   border-radius: 15px;
   width: 100%;
-  // max-height: 280px;
 }
 
 .headshotDescriptor {
@@ -214,6 +142,7 @@ styles for dropdown menu
 }
 
 .ourTeamBanner {
+  // opacity: 10%;
   width: 99vw;
   height: 18vh;
   border-radius: 10px;

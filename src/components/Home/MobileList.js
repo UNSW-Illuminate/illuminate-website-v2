@@ -5,6 +5,7 @@ import crystallise from "../../images/projects/crystallise.jpeg";
 import laneway from "../../images/projects/laneway.jpg";
 import pancake from "../../images/projects/pancake.jpeg";
 import heartstrings from "../../images/projects/heartstrings.jpeg";
+import paralanguage from "../../images/projects/paralanguage.jpg";
 import "react-alice-carousel/lib/alice-carousel.css";
 import * as styles from "./styles/MobileList.module.scss";
 import { motion } from "framer-motion";
@@ -13,6 +14,7 @@ import { Link } from "gatsby";
 
 const MobileList = () => {
   const projects = [
+    { img: paralanguage, link: "projects/paralanguage", name: "Paralanguage"},
     { img: heartstrings, link: "projects/heartstrings", name: "Heartstrings" },
     { img: laneway, link: "projects/laneway", name: "Laneway" },
     {
