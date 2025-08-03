@@ -27,7 +27,7 @@ Until gatbsy watchmode is added?
 
 
 To Deploy (Nathan): 
-- I changed this repo's visibility to public so that we could deploy our changes to Vercel - hopefully it should just automatically deploy when new changes are pushed to main
+- Change this repo's visibility to public, then push your changes to main, afterwards change it back to private.
 ...
 
 
