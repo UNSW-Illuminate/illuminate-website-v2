@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-copyright">Copyright © UNSW Illuminate 2023</div>
+      <div className="footer-copyright">Copyright © UNSW Illuminate 2025</div>
     </div>
   );
 };

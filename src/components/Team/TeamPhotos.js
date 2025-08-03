@@ -1,112 +1,95 @@
 import React from "react";
-import DropdownTab from "./DropdownTab";
-import PhotoDisplay from "./PhotoDisplay";
-import data from "./data";
+import { motion } from "framer-motion";
+
+import PhotoDisplayCard from "./PhotoDisplayCard";
+import DepartmentDisplayCard from "./DepartmentDisplayCard";
+
+import {teamData, depData} from "./data";
 import "../generalStyles.scss";
 import * as styles from "./styles/team.module.scss";
-import { motion } from "framer-motion";
-import * as Select from "@radix-ui/react-select";
-import { FiChevronDown, FiCheck } from "react-icons/fi";
-import useMediaQuery from "../../hooks/useMediaQuery";
+import teamBanner from '../../images/team/ourTeam.png'
+
 
 const TeamPhotos = () => {
-  const [selected, setSelected] = React.useState("Executive");
-  const [open, setOpen] = React.useState({
-    0: false,
-    1: false,
-    2: false,
-    3: false,
-  });
-
-  const isSelected = (portfolio) =>
-    Object.keys(data[portfolio]).includes(selected);
-
-  const isLaptop = useMediaQuery("(min-width: 1200px)");
 
   return (
-    <div className={styles.wrapper}>
-      <motion.h1
-        className="pageHeading"
-        initial={{ y: -10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-      >
-        Our Team
-      </motion.h1>
-      <motion.div
-        className={styles.container}
-        initial={{ y: -10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-      >
-        {isLaptop ? (
-          <div className={styles.dropdownTabContainer}>
-            {Object.keys(data).map((e, key) => {
-              return (
-                <DropdownTab
-                  portfolio={e}
-                  subTeam={data[e]}
-                  isSelected={isSelected(e)}
-                  setSelected={setSelected}
-                  key={key}
-                  tabId={key}
-                  setOpen={setOpen}
-                  open={open}
-                />
-              );
-            })}
-          </div>
-        ) : (
-          <MobileYearSelector
-            portfolios={data}
-            selected={selected}
-            setSelected={setSelected}
-          />
-        )}
 
-        <PhotoDisplay selected={selected} data={data} />
-      </motion.div>
-    </div>
+    <motion.div
+      initial={{ y: -10, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+
+      <div className={styles.wrapper}>
+
+        <div 
+          className={`${styles.ourTeamBanner} pageHeading`}
+          style={{
+             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${teamBanner})`,
+            // backgroundImage: `url(${teamBanner})`,
+            backgroundPosition: `center center`,
+            backgroundRepeat: `no-repeat`,
+            }}
+        >
+          Our Team
+        </div>
+
+        <div 
+          className={styles.subTeamHeading}
+        >
+          Team Leads
+        </div>
+        {/* Create team lead photo cards */}
+        <div>
+          {teamData?.Executive.map((person) => (
+          <PhotoDisplayCard key={person.name} person={person}/>
+          ))}
+        </div>
+
+
+        <div className={`${styles.subTeamHeading} ${styles.SubHeadingTopMargin}`}>
+          Technical Leads
+        </div>
+        {/* Create technical lead photo cards */}
+        <div  
+          className={styles.teamPhotoContainer}
+        >
+          {teamData?.Design.map((person) => (
+            <PhotoDisplayCard key={person.name} person={person}/>
+          ))}
+          {teamData?.Technical.map((person) => (
+            <PhotoDisplayCard key={person.name} person={person}/>
+          ))}
+        </div>
+
+
+        <div
+          className={`${styles.subTeamHeading} ${styles.  SubHeadingTopMargin}`}
+        >
+          Team Members
+        </div>
+        <div
+          className={`${styles.teamMemberList}`}>
+          Albert (Tri) Do • Alicia Ding • Andrew Ni • Anish Bajaj • Anoushdka Jai Shanker • Audrey Kao • Beatrice Chen • Guy Rein • Jasmine Aung • Liam Smith • Nathanael Jason • Rishi Adhvaryu • Joshua Yee • Sam Trustrum • Samantha Kabidin • Serena He • Tazin Saiyed • Ziyad Ashraf
+        </div>
+
+
+        <div 
+          className={`${styles.subTeamHeading} ${styles.SubHeadingTopMargin}`}>
+          Our Departments
+        </div>
+
+        <div 
+          className={styles.DepDisplayContainer}>
+          {/* Create department information cards */}
+          {depData?.departments.map((department) => (
+          <DepartmentDisplayCard key={department.depName} department={department}/>
+          ))}
+        </div>
+
+      </div>
+    </motion.div>
   );
 };
 
 export default TeamPhotos;
-
-const MobileYearSelector = ({ portfolios, selected, setSelected }) => {
-  return (
-    <Select.Root
-      defaultValue={selected}
-      onValueChange={(portfolio) => {
-        setSelected(portfolio);
-      }}
-    >
-      <Select.Trigger className={styles.mobileTrigger}>
-        <Select.Value value={selected} />
-        <Select.Icon>
-          <FiChevronDown />
-        </Select.Icon>
-      </Select.Trigger>
-
-      <Select.Portal>
-        <Select.Content>
-          <motion.div initial={{ y: -10 }} animate={{ y: 0 }}>
-            <Select.ScrollUpButton />
-            <Select.Viewport className={styles.mobileContent}>
-              {Object.keys(portfolios).map((portfolio) => (
-                <Select.Item
-                  value={portfolio}
-                  key={portfolio}
-                  className={styles.mobileItem}
-                >
-                  <Select.ItemText>{portfolio}</Select.ItemText>
-                  <Select.ItemIndicator>
-                    <FiCheck />
-                  </Select.ItemIndicator>
-                </Select.Item>
-              ))}
-            </Select.Viewport>
-            <Select.ScrollDownButton />
-          </motion.div>
-        </Select.Content>
-      </Select.Portal>
-    </Select.Root>
-  );
-};

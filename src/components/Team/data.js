@@ -1,61 +1,76 @@
-import artDesignLead from "../../images/team/natalie.jpg";
-import teamManager from "../../images/team/allan.png";
-import mechanicalLead from "../../images/team/daniel.jpg";
-import electricalLead from "../../images/team/aayush.jpeg";
-import softwareLead from "../../images/team/mitchell.png";
+// import artDesignLead from "../../images/team/natalie.jpg";
+// import teamManager from "../../images/team/allan.png";
+// import mechanicalLead from "../../images/team/daniel.jpg";
+// import softwareLead from "../../images/team/mitchell.png";
+import teamlead from "../../images/team/nathan.jpg";
+import electricalLead from "../../images/team/elsa.jpg";
 
 import generic from "../../images/team/generic.png";
 
-const data = {
-  Technical: {
+import designBackground from "../../images/team/DesignBackground.jpg";
+import electricalBackground from "../../images/team/ElectricalBackground.jpg";
+import mechanicalBackground from "../../images/team/MechanicalBackground.jpg";
+import softwareBackground from "../../images/team/SoftwareBackground.jpg";
+
+export const teamData = {
+
     Technical: [
       {
-        name: "Aayush Rajouria",
+        name: "Elsa Doan",
         role: "Electrical Lead",
         img: electricalLead,
       },
       {
-        name: "Daniel Cicek",
+        name: "Yangyue Jiang",
         role: "Mechanical Lead",
-        img: mechanicalLead,
+        img: generic,
       },
       {
-        name: "Nathan Nguyen",
+        name: "Sheen Sandhu",
         role: "Software Lead",
-        img: softwareLead,
-      },
-      {
-        name: "Ray Gu",
-        role: "Technical Manager",
-        img: generic,
-      },
-      {
-        name: "Tejit Pradhan",
-        role: "Web Lead",
         img: generic,
       },
     ],
-  },
 
-  "Art and Design": {
-    "Art and Design": [
+    Design: [
       {
-        name: "Natalie Chen",
+        name: "Stella Fan",
         role: "Art and Design Lead",
-        img: artDesignLead,
+        img: generic,
       },
     ],
-  },
 
-  Executive: {
     Executive: [
       {
-        name: "Allan Goodman",
-        role: "Team Manager",
-        img: teamManager,
+        name: "Nathan Nguyen",
+        role: "Project Lead",
+        img: teamlead,
       },
     ],
-  },
+
 };
 
-export default data;
+export const depData ={
+  departments: [
+    {
+      depName: "Software",
+      depDescription: "We develop the logic that powers our systems — from control loops to user interfaces. Our team works across embedded systems, simulation, and real-time processing to make everything run smoothly.",
+      img: softwareBackground
+    },
+    {
+      depName: "Mechanical",
+      depDescription: "We design and build the physical systems behind our projects — everything from frames and linkages to actuators and custom parts. Whether it’s 3D printing or full assemblies, we turn ideas into something real.",
+      img: mechanicalBackground
+    },
+    {
+      depName: "Electrical",
+      depDescription: "This team handles the electronics that bring our systems to life. From circuit design to wiring and testing, we make sure everything has power, signal, and reliability.",
+      img: electricalBackground
+    },
+    {
+      depName: "Design & Biomedical",
+      depDescription: "This team bridges the gap between engineering and experience. Whether it's designing intuitive interfaces or exploring biomedical challenges, we focus on solutions that are both functional and thoughtful.",
+      img: designBackground
+    },
+  ]
+};
