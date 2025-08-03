@@ -18,15 +18,17 @@ const Navbar = ({ currentPage }) => {
   const [hasScrolled, setHasScrolled] = React.useState(false);
 
   React.useEffect(() => {
-    const handleScroll = () => {
-      setHasScrolled(window.scrollY > 50);
-    };
+    if (typeof document !== "undefined") {
+      const handleScroll = () => {
+        setHasScrolled(window.scrollY > 50);
+      };
 
-    document.addEventListener("scroll", handleScroll);
+      document.addEventListener("scroll", handleScroll);
 
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
+      return () => {
+        document.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   const isLandscape = useMediaQuery("(min-width: 900px)");
