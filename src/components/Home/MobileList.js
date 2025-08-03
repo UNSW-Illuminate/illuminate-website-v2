@@ -41,7 +41,12 @@ const MobileList = () => {
             >
               <Avatar.Image
                 src={project.img}
-                style={{ marginBottom: "10px" }}
+                style={{
+                  marginBottom: "10px",
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "100%"
+                }}
               />
               <div className={styles.caption}>{project.name}</div>
             </motion.div>

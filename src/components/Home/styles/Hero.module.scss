@@ -122,14 +122,14 @@
   // border-radius: 1000px;
   @media (min-width: 350px) {
     /* Laptop */
-    transform: scaleY(1.8);
+    transform: scaleY(1);
   }
   
   
   
   @media (min-width: 1000px) {
     /* Laptop */
-    transform: scaleY(2.5) scaleX(1.5);
+    transform: scaleY(1) scaleX(1);
   }
   
   
