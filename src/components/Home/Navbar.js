@@ -18,7 +18,7 @@ const Navbar = ({ currentPage }) => {
   const [hasScrolled, setHasScrolled] = React.useState(false);
 
   React.useEffect(() => {
-    if (typeof document !== "undefined") {
+    if (typeof window !== "undefined" && typeof document !== "undefined") {
       const handleScroll = () => {
         setHasScrolled(window.scrollY > 50);
       };
