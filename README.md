@@ -26,7 +26,8 @@ npm run develop
 Until gatbsy watchmode is added?
 
 
-To Delpoy: 
+To Deploy (Nathan): 
+- I changed this repo's visibility to public so that we could deploy our changes to Vercel - hopefully it should just automatically deploy when new changes are pushed to main
 ...
 
 
