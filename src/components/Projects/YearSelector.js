@@ -6,7 +6,7 @@ import { FiChevronDown, FiCheck } from "react-icons/fi";
 import useMediaQuery from "../../hooks/useMediaQuery";
 
 const YearSelector = ({ selectedYear, setSelectedYear, isArticle }) => {
-  const years = ["All", "2023", "2022", "2020", "2019", "2018", "2017", "2016"];
+  const years = ["All", "2025", "2023", "2022", "2020", "2019", "2018", "2017", "2016"];
   const isLaptop = useMediaQuery("(min-width: 960px)");
 
   return (
