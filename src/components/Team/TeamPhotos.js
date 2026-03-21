@@ -63,18 +63,18 @@ const TeamPhotos = () => {
         </div>
 
 
-        <div
-          className={`${styles.subTeamHeading} ${styles.  SubHeadingTopMargin}`}
-        >
-          Team Members
-        </div>
-        <div
-          className={`${styles.teamMemberList}`}>
-          Albert (Tri) Do • Alicia Ding • Andrew Ni • Anish Bajaj • Anoushdka Jai Shanker • Audrey Kao • Beatrice Chen • Guy Rein • Jasmine Aung • Liam Smith • Nathanael Jason • Rishi Adhvaryu • Joshua Yee • Sam Trustrum • Samantha Kabidin • Serena He • Tazin Saiyed • Ziyad Ashraf
-        </div>
+    //    <div
+    //      className={`${styles.subTeamHeading} ${styles.  SubHeadingTopMargin}`}
+    //    >
+    //      Team Members
+    //    </div>
+    //    <div
+    //      className={`${styles.teamMemberList}`}>
+    //      Albert (Tri) Do • Alicia Ding • Andrew Ni • Anish Bajaj • Anoushdka Jai Shanker • Audrey Kao • Beatrice Chen • Guy Rein • Jasmine Aung • Liam Smith • Nathanael Jason • Rishi Adhvaryu • Joshua Yee • Sam Trustrum • Samantha Kabidin • Serena He • Tazin Saiyed • Ziyad Ashraf
+    //    </div>
 
 
-        <div>
+        <div 
           className={`${styles.subTeamHeading} ${styles.SubHeadingTopMargin}`}>
           Our Departments
         </div>
