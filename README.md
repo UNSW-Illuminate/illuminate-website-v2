@@ -11,7 +11,7 @@ npm update
 ```
 then to start development server:
 ```shell
-npm run develop
+npm run start
 ```
 Your site is now running at http://localhost:8000!
 
@@ -21,7 +21,7 @@ should run at http://localhost:3333 and ask for authentication to sanity.io so y
 Changes to the website code will refresh on localhost automatically.
 To see sanity content changes reflected on the localhost site, you'll need to cancel and rerun:
 ```shell
-npm run develop
+npm run start
 ```
 Until gatbsy watchmode is added?
 
