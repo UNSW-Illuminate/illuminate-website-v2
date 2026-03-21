@@ -30,6 +30,10 @@ To Deploy (Nathan):
 - Change this repo's visibility to public, then push your changes to main, afterwards change it back to private.
 ...
 
+# 21/3/26
+Nathan: I’ve just gone ahead and updated the website CMS to include info about Viscera, as well as update the year picker for project, there’s still a few things left to do such as:
+- [ ] The project collage at the bottom of the hero page needs to include Viscera
+- [ ] Updating the packages and cleaning up tech debt
 
-
+Side note, the website repo runs better on macOS than Windows from personal experience
    
