@@ -40,7 +40,9 @@ const TeamPhotos = () => {
           Team Leads
         </div>
         {/* Create team lead photo cards */}
-        <div>
+        <div
+          className={styles.teamPhotoContainer}  
+        >
           {teamData?.Executive.map((person) => (
           <PhotoDisplayCard key={person.name} person={person}/>
           ))}

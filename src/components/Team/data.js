@@ -1,9 +1,11 @@
-// import artDesignLead from "../../images/team/natalie.jpg";
-// import teamManager from "../../images/team/allan.png";
-// import mechanicalLead from "../../images/team/daniel.jpg";
-// import softwareLead from "../../images/team/mitchell.png";
-import teamlead from "../../images/team/nathan.jpg";
-import electricalLead from "../../images/team/elsa.jpg";
+// TODO: Andrew add executive team photos
+//import projectLead1 from "../../images/team/lisaN.jpg";
+//import projectLead2 from "../../images/team/lisaH.jpg";
+//import electricalLead1 from "../../images/team/andrew.jpg";
+//import electricalLead2 from "../../images/team/fange.jpg";
+//import mechanicalLead from "../../images/team/jacky.jpg";
+//import artDesignLead from "../../images/team/alexei.jpg";
+//import softwareLead from "../../images/team/justin.jpg";
 
 import generic from "../../images/team/generic.png";
 
@@ -16,17 +18,22 @@ export const teamData = {
 
     Technical: [
       {
-        name: "Elsa Doan",
+        name: "Andrew Ni",
         role: "Electrical Lead",
-        img: electricalLead,
+        img: generic,
       },
       {
-        name: "Yangyue Jiang",
+        name: "Fange Wu",
+        role: "Electrical Lead",
+        img: generic,
+      },
+      {
+        name: "Jacky Peng",
         role: "Mechanical Lead",
         img: generic,
       },
       {
-        name: "Sheen Sandhu",
+        name: "Justin Prasad",
         role: "Software Lead",
         img: generic,
       },
@@ -34,7 +41,7 @@ export const teamData = {
 
     Design: [
       {
-        name: "Stella Fan",
+        name: "Alexei Machkevitch",
         role: "Art and Design Lead",
         img: generic,
       },
@@ -42,9 +49,14 @@ export const teamData = {
 
     Executive: [
       {
-        name: "Nathan Nguyen",
+        name: "Lisa Huang",
         role: "Project Lead",
-        img: teamlead,
+        img: generic,
+      },
+      {
+        name: "Lisa Ni",
+        role: "Project Lead",
+        img: generic,
       },
     ],
 
