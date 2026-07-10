@@ -72,7 +72,7 @@ const TeamPhotos = () => {
         </div>
         <div
           className={`${styles.teamMemberList}`}>
-          Albert (Tri) Do • Alicia Ding • Andrew Ni • Anish Bajaj • Anoushdka Jai Shanker • Audrey Kao • Beatrice Chen • Guy Rein • Jasmine Aung • Liam Smith • Nathanael Jason • Rishi Adhvaryu • Joshua Yee • Sam Trustrum • Samantha Kabidin • Serena He • Tazin Saiyed • Ziyad Ashraf
+          Andrew Smedley • Aarush Sood • Jennifer Yu • Alex Shim • Aneesa Shaki • Audrey Kao • Samantha Kabidin • Selena Duong • Chanunchida Sugunasil • Daniel Yu •  Huzaifa Bin Yasir • Rishi Chidambaram • Nandita Vemuri • Fiona Riyadi • Marlon Reid • Naimul Azmat • Rosanne Lee • Tonglin Li
         </div>
 
 
