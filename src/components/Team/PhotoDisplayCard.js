@@ -16,7 +16,7 @@ const PhotoDisplayCard = ({person}) => {
             className={styles.headshotWrapper}
         >
 
-            <Avatar.Root>
+            <Avatar.Root className={styles.headshotRoot}>
                 <Avatar.Image src={person.img} className={styles.headshot} />
                 <Avatar.Fallback>
                     <div className={styles.skeletonHeadshot} />
