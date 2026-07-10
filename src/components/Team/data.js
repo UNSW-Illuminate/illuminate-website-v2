@@ -2,7 +2,7 @@
 import projectLead1 from "../../images/team/lisaN.jpg";
 import projectLead2 from "../../images/team/lisaH.jpg";
 import electricalLead1 from "../../images/team/andrew.jpg";
-//import electricalLead2 from "../../images/team/fange.jpg";
+import electricalLead2 from "../../images/team/fange.jpeg";
 //import mechanicalLead from "../../images/team/jacky.jpg";
 //import artDesignLead from "../../images/team/alexei.jpg";
 import softwareLead from "../../images/team/justin.jpeg";
@@ -25,7 +25,7 @@ export const teamData = {
       {
         name: "Fange Wu",
         role: "Electrical Lead",
-        img: generic,
+        img: electricalLead2,
       },
       {
         name: "Jacky Peng",
