@@ -1,11 +1,11 @@
 // TODO: Andrew add executive team photos
-//import projectLead1 from "../../images/team/lisaN.jpg";
-//import projectLead2 from "../../images/team/lisaH.jpg";
-//import electricalLead1 from "../../images/team/andrew.jpg";
+import projectLead1 from "../../images/team/lisaN.jpg";
+import projectLead2 from "../../images/team/lisaH.jpg";
+import electricalLead1 from "../../images/team/andrew.jpg";
 //import electricalLead2 from "../../images/team/fange.jpg";
 //import mechanicalLead from "../../images/team/jacky.jpg";
 //import artDesignLead from "../../images/team/alexei.jpg";
-//import softwareLead from "../../images/team/justin.jpg";
+import softwareLead from "../../images/team/justin.jpeg";
 
 import generic from "../../images/team/generic.png";
 
@@ -20,7 +20,7 @@ export const teamData = {
       {
         name: "Andrew Ni",
         role: "Electrical Lead",
-        img: generic,
+        img: electricalLead1,
       },
       {
         name: "Fange Wu",
@@ -35,7 +35,7 @@ export const teamData = {
       {
         name: "Justin Prasad",
         role: "Software Lead",
-        img: generic,
+        img: softwareLead,
       },
     ],
 
@@ -51,12 +51,12 @@ export const teamData = {
       {
         name: "Lisa Huang",
         role: "Project Lead",
-        img: generic,
+        img: projectLead2,
       },
       {
         name: "Lisa Ni",
         role: "Project Lead",
-        img: generic,
+        img: projectLead1,
       },
     ],
 
